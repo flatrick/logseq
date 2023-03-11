@@ -29,6 +29,9 @@ alias:: [[Datalog]], [[Datascript]]
 				- asking for all attributes found and stored in `?VARIABLE`
 			- #### :where ...
 				- the initial variable is the collection the operation will be performed on
+				- the second part is the attribute to be worked with
+				- the third/last part is either:
+					- a string/int that it will use to find matching entities
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
