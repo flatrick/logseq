@@ -63,7 +63,10 @@ alias:: [[Datalog]], [[Datascript]]
 					  :input [ "James Cameron" "Ridley Scott" ]
 					  ```
 			- #### :where
-				- the **initial variable** is the collection the operation will be performed on
+				- the initial **variable** is the collection the operation will be performed on
+					- if it hasn't been used yet, it will point to the whole database
+					- if it was used as the last part in a previous step
+						- this part will only be run against those entities that was matched in that previous step
 				- the second part is the **attribute** to be looked at
 				- the third/last part *(optional)* can be:
 					- 1. a string/int that it will use to find **entities** where the **attribute** matches
