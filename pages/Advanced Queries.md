@@ -48,6 +48,7 @@ alias:: [[Datalog]], [[Datascript]]
 	  ```
 - # Links
 	- [Max Datom - An Interactive Datomic Learning Experience](https://max-datom.com/)
+	- [Datomic Queries and Rules](https://docs.datomic.com/on-prem/query/query.html)
 	- [Learn DataLog Today](https://www.learndatalogtoday.org/)
 	- [Datascript - Getting started](https://github.com/tonsky/datascript/wiki/Getting-started)
 	- [Datascript and Datomic: Data Modeling for Heroes - Mark Bastian](https://youtu.be/tV4pHW_WOrY)
