@@ -1,4 +1,4 @@
-alias:: [[Datalog]]
+alias:: [[Datalog]], [[Datascript]]
 
 - `?b` = block
 - `?p` = page
