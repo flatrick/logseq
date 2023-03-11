@@ -1,7 +1,6 @@
 alias:: [[Datalog]], [[Datascript]]
 
 - # Unsorted notes
-  collapsed:: true
 	- a questionmark followed by letters are used as placeholders (variables) for data
 	  collapsed:: true
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
@@ -11,6 +10,10 @@ alias:: [[Datalog]], [[Datascript]]
 			  :LOGBOOK:
 			  CLOCK: [2023-03-11 Sat 14:39:28]
 			  :END:
+	- Queries are written in [[Extensible Data Notation]]
+		- simple
+		- declarative
+		- loc
 - # The parts of a query
 	- ## :title
 	- ## :query
