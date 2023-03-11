@@ -52,10 +52,10 @@ alias:: [[Datalog]], [[Datascript]]
 					  [?e :user/age ?age]
 					  [(>= ?age 21)]
 					  ```
-						- `?e` is the *collection of **entities*** that we want to get data from
-						- the **entities** must have the **attribute** :user/age
-						- we keep track of these entities age-attribute in the variable ?age
-						- then we say that we only want the entities where :user/age is 21 or higher
+						- `?e` is the _collection of **entities**_ that we want to get data from
+						- the **entities** must have the **attribute** `:user/age`
+						- we keep track of these entities' `:user/age`-**attribute** in the **variable** `?age`
+						- then we say that we only want the **entities** where `:user/age` is **21 or higher**
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
