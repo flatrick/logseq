@@ -49,7 +49,7 @@ alias:: [[Datalog]], [[Datascript]]
 					- when used outside of [[Logseq]], these variables can be supplied when calling this query
 					- if more than one dynamic values are needed, all of these must be defined in the `:in` clause
 						- and in the case of [[Logseq]], their values must be added to `:input [ ]`
-				- ##### collections
+				- ##### collections #unfinished
 					- If you want to find
 					- ```clojure
 					  [:find ?title
