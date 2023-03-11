@@ -27,6 +27,7 @@ alias:: [[Datalog]], [[Datascript]]
 			- #### `(pull ?VARIABLE [*]`
 				- using the "pull API"
 				- asking for all attributes found and stored in `?VARIABLE`
+			-
 			- #### :where ...
 				- the initial variable is the collection the operation will be performed on
 				- the second part is the attribute to be worked with
