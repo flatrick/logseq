@@ -40,13 +40,14 @@ alias:: [[Datalog]], [[Datascript]]
 					  [ :find ?person
 					   :in $ ?day
 					   :where
-					   [$ ?d :journal/date ?day]
+					   [$ ?d :meeting/date ?day]
 					   [$ ?s :staff/employee ?p]
 					   [$ ?s :staff/name ?person] ]
 					  :input [ :today ]
 					  ```
+						- this query will list the names of all people who attended the meeting today using the special **macro** `:today`
 					- when used outside of [[Logseq]], these variables can be supplied when calling this query
-					- if more than one variable is needed
+					- if more than one variable is needed, all these must be defined in the `:in` clause
 			- #### :where ...
 				- the **initial variable** is the collection the operation will be performed on
 				- the second part is the **attribute** to be looked at
