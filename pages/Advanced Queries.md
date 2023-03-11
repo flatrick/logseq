@@ -32,7 +32,7 @@ alias:: [[Datalog]], [[Datascript]]
 					- this would return a list of all **entities**, showing only the two **values** of the requested **attributes** for each **entity**
 				- `(pull ?VARIABLE [*])`
 					- this would return a list of all entities, showing all **values** for each **entity**
-			- #### :in
+			- #### :in _(optional)_
 				-
 			- #### :where ...
 				- the **initial variable** is the collection the operation will be performed on
