@@ -37,13 +37,13 @@ alias:: [[Datalog]], [[Datascript]]
 				- when used, you need to define which database to use *(`$` can often be used as a shortcut)*
 				- to use dynamic values as input, we need to supply the variable here (`?var`)
 					- ```clojure
-					  [:find ?title
-					   :in $ ?today
+					  [ :find ?person
+					   :in $ ?day
 					   :where
-					   [$ ?p :person/name ?name]
+					   [$ ?d :journal/date ?day]
 					   [$ ?m :movie/cast ?p]
-					   [$ ?m :movie/title ?title]]
-					  :input [  ]
+					   [$ ?m :movie/title ?person] ]
+					  :input [ :today ]
 					  ```
 			- #### :where ...
 				- the **initial variable** is the collection the operation will be performed on
