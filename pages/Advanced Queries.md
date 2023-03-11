@@ -25,9 +25,9 @@ alias:: [[Datalog]], [[Datascript]]
 	- ## :query
 		- ### :find
 		  id:: 640c9a94-4943-47d3-bea4-eed3a8a7ee7b
-			-
+			- if only supply a variable-name, the ID of the matched entity will be returned
 			- #### `(pull ?VARIABLE [*]`
-				- using the "pull API"
+				- by using the **Pull Syntax/API**
 				- asking for all attributes found and stored in `?VARIABLE`
 			- #### :in
 				-
