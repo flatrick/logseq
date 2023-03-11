@@ -14,9 +14,11 @@ alias:: [[Datalog]], [[Datascript]]
 	- # :where
 - # :inputs
 - # :view
+	- # `(fn [query-result] [:div ...])`
 - # :result-transform
-	- # (fn [ ])
--
+	- # `(fn [query-result])`
+- # :collapsed?
+- # :rules [...]
 - ```clojure
   {:title  [:h2 "Your query title"]
    :query  [:find (pull ?b [*])
