@@ -47,13 +47,13 @@ alias:: [[Datalog]], [[Datascript]]
 	  :rules [...]}
 	  ```
 - # Links
-	- https://max-datom.com/
+	- [Max Datom - An Interactive Datomic Learning Experience](https://max-datom.com/)
 	- [Learn DataLog Today](https://www.learndatalogtoday.org/)
-	- https://qwxlea.github.io/#/page/datalog%2FIntro%20to%20Datalog
-	- https://youtu.be/tV4pHW_WOrY
+	- [Datascript - Getting started](https://github.com/tonsky/datascript/wiki/Getting-started)
+	- [Datascript and Datomic: Data Modeling for Heroes - Mark Bastian](https://youtu.be/tV4pHW_WOrY)
 	- [Logseq Schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
 	- [Logseq Rules](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/rules.cljc)
 	- [Learning resources for advanced queries (Datalog)](https://discuss.logseq.com/t/learning-resources-for-advanced-queries-datalog/8619)
 	- [Advanced Queries - Docs Logseq](https://docs.logseq.com/#/page/advanced%20queries)
-	- [Datomic Tutorial - ](https://github.com/ftravers/datomic-tutorial)
-	- Missing Link Tutorials
+	- [Datomic Tutorial - Missing Link Tutorials](https://github.com/ftravers/datomic-tutorial)
+	- [Intro to Datalog - qwxlea](https://qwxlea.github.io/#/page/datalog%2FIntro%20to%20Datalog)
