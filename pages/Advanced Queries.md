@@ -1,6 +1,7 @@
 alias:: [[Datalog]], [[Datascript]]
 
 - # Unsorted notes
+  collapsed:: true
 	- a questionmark followed by letters are used as placeholders (variables) for data
 	  collapsed:: true
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
@@ -31,7 +32,7 @@ alias:: [[Datalog]], [[Datascript]]
 				- `?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2]`
 					- this would return a list of all **entities**, showing only the two **values** of the requested **attributes** for each **entity**
 				- `(pull ?VARIABLE [*])`
-					- this would return a list of all entities, showing all **values** for each **entity**
+					- this would return a list of all entities, showing all **values** for each **entity** thanks to the wildcard *(the asterisk)*
 			- #### :in _(optional)_
 				- **:in** can be omitted and then it will use the entire database
 				- when used, you need to define which database to use *(`$` can often be used as a shortcut)*
