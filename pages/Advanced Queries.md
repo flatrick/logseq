@@ -25,6 +25,7 @@ alias:: [[Datalog]], [[Datascript]]
 	- ## :query
 		- ### :find
 		  id:: 640c9a94-4943-47d3-bea4-eed3a8a7ee7b
+			-
 			- #### `(pull ?VARIABLE [*]`
 				- using the "pull API"
 				- asking for all attributes found and stored in `?VARIABLE`
@@ -38,7 +39,7 @@ alias:: [[Datalog]], [[Datascript]]
 					- or it will be a **variable** (`?var`) that stores the **attribute**'s value in
 					- *if omitted,* it will return the **entity/entities** that have the **attribute** defined in this **where-clause**
 						- more specifically, their *unique identifier* will be returned
-							- in the **:find** clause we can select the specific **attribute**
+							- in the **:find** clause we can select the specific **attribute** to extract
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
