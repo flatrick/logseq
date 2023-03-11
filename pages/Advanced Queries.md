@@ -31,11 +31,12 @@ alias:: [[Datalog]], [[Datascript]]
 				-
 			- #### :where ...
 				- the **initial variable** is the collection the operation will be performed on
-				- the second part is the attribute to be worked with
+				- the second part is the **attribute** to be looked at
 				- the third/last part *(optional)* is either:
-					- a string/int that it will use to find matching entities with
-					- or it will be a variable (`?var`) that stores the attribute's value in
-					- *if omitted,* it will return the entire **entity/entities** that have the **attribute** defined as the second part
+					- a string/int that it will use to find **entities** where the **attribute** matches
+					- or it will be a **variable** (`?var`) that stores the **attribute**'s value in
+					- *if omitted,* it will return the **entity/entities** that have the **attribute** defined in this **where-clause**
+						- more specifically, their unique identifier will be returned
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
