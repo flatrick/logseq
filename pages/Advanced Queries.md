@@ -19,9 +19,8 @@ alias:: [[Datalog]], [[Datascript]]
 		- `_ATTRIBUTE` will ask for the parent that holds the specific attribute
 		- `:keyword` / `:namespace/keyword` can refer to:
 			- functions or attribute-names
-- # H
+- # Hiccup
 - # The parts of a query
-  collapsed:: true
 	- ## :title
 	- ## :query
 		- ### :find
