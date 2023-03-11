@@ -36,6 +36,7 @@ alias:: [[Datalog]], [[Datascript]]
 				- **:in** can be omitted and then it will use the entire database
 				- when used, you need to define which database to use *(`$` can often be used as a shortcut)*
 				- to use dynamic values as input, we need to supply the variable here (`?var`)
+				  collapsed:: true
 					- ```clojure
 					  [ :find ?person
 					   :in $ ?day
@@ -48,8 +49,9 @@ alias:: [[Datalog]], [[Datascript]]
 						- this query will list the names of all people who attended the meeting today using the special **macro** `:today`
 					- when used outside of [[Logseq]], these variables can be supplied when calling this query
 					- if more than one dynamic values are needed, all of these must be defined in the `:in` clause
-						- and in the case of [[Logseq]], their values must be added to `:input [...]`
-			- #### :where ...
+						- and in the case of [[Logseq]], their values must be added to `:input [ ]`
+				-
+			- #### :where
 				- the **initial variable** is the collection the operation will be performed on
 				- the second part is the **attribute** to be looked at
 				- the third/last part *(optional)* is either:
