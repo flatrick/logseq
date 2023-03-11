@@ -16,14 +16,14 @@ alias:: [[Datalog]], [[Datascript]]
 		- logic
 		- `$name` refers to a database
 		- `?name` refers to a variable
-		-
+		- `_ATTRIBUTE` will ask for the parent that holds the specific attribute
 - # The parts of a query
 	- ## :title
 	- ## :query
 		- ### :find
 			- #### `(pull ?VARIABLE [*]`
 				- using the "pull API"
-				- asking for all attributes found and stored in `?
+				- asking for all attributes found and stored in `?VARIABLE`
 			- #### :where ...
 	- ## :inputs
 	- ## :view
