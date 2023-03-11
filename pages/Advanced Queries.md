@@ -1,6 +1,7 @@
 alias:: [[Datalog]], [[Datascript]]
 
 - # Unsorted notes
+  collapsed:: true
 	- a questionmark followed by letters are used as placeholders (variables) for data
 	  collapsed:: true
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
@@ -11,22 +12,19 @@ alias:: [[Datalog]], [[Datascript]]
 			  CLOCK: [2023-03-11 Sat 14:39:28]
 			  :END:
 - # The parts of a query
-	- # :title
-	- # :query
-	  collapsed:: true
-		- ## :find
-		  collapsed:: true
-			-
-		- ## :where
-	- # :inputs
-	- # :view
+	- ## :title
+	- ## :query
+		- ### :find
+			- #### `(pull ?VARIABLE [*]`
+			- #### :where ...
+	- ## :inputs
+	- ## :view
 	  collapsed:: true
 		- ## `(fn [query-result] [:div ...])`
-	- # :result-transform
-	  collapsed:: true
-		- ## `(fn [query-result] ...)`
-	- # :collapsed?
-	- # :rules [...]
+	- ## :result-transform
+		- ### `(fn [query-result] ...)`
+	- ## :collapsed?
+	- ## :rules [...]
 - # Example
 	- ```clojure
 	  {:title  [:h2 "Your query title"]
