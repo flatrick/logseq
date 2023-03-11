@@ -66,9 +66,10 @@ alias:: [[Datalog]], [[Datascript]]
 				- the **initial variable** is the collection the operation will be performed on
 				- the second part is the **attribute** to be looked at
 				- the third/last part *(optional)* can be:
-					- a string/int that it will use to find **entities** where the **attribute** matches
-					- a **variable** (`?var`) that stores the **attribute**'s value in
-					- or it can
+					- 1. a string/int that it will use to find **entities** where the **attribute** matches
+					- 2. a **variable** (`?var`) that stores a list of **entities** that has the specified **attribute** that can be used in later stages or to be returned to the
+					- 3. a **variable** that is set from input that is used to find matching **entities**
+						- in the case of [[Logseq]], it is in the `:input [ ]` clause
 					- *if omitted,* it will return the **entity/entities** that have the **attribute** defined in this **where-clause**
 						- more specifically, their *unique identifier* will be returned
 							- in the **:find** clause we can select the specific **attribute** to extract
