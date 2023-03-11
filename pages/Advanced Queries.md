@@ -34,6 +34,7 @@ alias:: [[Datalog]], [[Datascript]]
 				- `(pull ?VARIABLE [*])`
 					- this would return a list of all entities, showing all **values** for each **entity** thanks to the wildcard *(the asterisk)*
 			- #### :in _(optional)_
+			  collapsed:: true
 				- **:in** can be omitted and then it will use the entire database
 				- when used, you need to define which database to use *(`$` can often be used as a shortcut)*
 				- to use dynamic values as input, we need to supply the variable here (`?var`)
@@ -64,16 +65,18 @@ alias:: [[Datalog]], [[Datascript]]
 			- #### :where
 				- the **initial variable** is the collection the operation will be performed on
 				- the second part is the **attribute** to be looked at
-				- the third/last part *(optional)* is either:
-				  collapsed:: true
+				- the third/last part *(optional)* can be:
 					- a string/int that it will use to find **entities** where the **attribute** matches
-					- or it will be a **variable** (`?var`) that stores the **attribute**'s value in
+					- a **variable** (`?var`) that stores the **attribute**'s value in
+					- or it can
 					- *if omitted,* it will return the **entity/entities** that have the **attribute** defined in this **where-clause**
 						- more specifically, their *unique identifier* will be returned
 							- in the **:find** clause we can select the specific **attribute** to extract
 				- multiple **where-clauses** are implicitly added as **AND**
+				  collapsed:: true
 					- in other words, all clauses must match with an **entity** for it to be returned
 				- the following **where-clause** will only match **entities** that has the **attribute** `age` and where the **value** of `age` is `21` or higher
+				  collapsed:: true
 					- ```clojure
 					  :where
 					  [?e :user/age ?age]
