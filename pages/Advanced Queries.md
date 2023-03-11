@@ -26,9 +26,9 @@ alias:: [[Datalog]], [[Datascript]]
 	- ## :query
 		- ### :find
 		  id:: 640c9a94-4943-47d3-bea4-eed3a8a7ee7b
-			- if only supply a variable-name, the ID of the matched entity will be returned
-			- #### `(pull ?VARIABLE [*])` / `(pull ?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2])`
-				- by using the **Pull Syntax/API**, we can ask for some/all **attributes** of the **entities**
+			- if you only supply a variable-name, the ID of the matched entity will be returned
+			- #### Pull Syntax/API
+				- by using the **Pull Syntax/API**, we can ask for some or all **attributes** of the **entities**
 				- `?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2]`
 					- this would return a list of all **entities**, showing only the two **values** of the requested **attributes** for each **entity**
 				- `(pull ?VARIABLE [*])`
@@ -67,7 +67,7 @@ alias:: [[Datalog]], [[Datascript]]
 				- the second part is the **attribute** to be looked at
 				- the third/last part *(optional)* can be:
 					- 1. a string/int that it will use to find **entities** where the **attribute** matches
-					- 2. a **variable** (`?var`) that stores a list of **entities** that has the specified **attribute** that can be used in later stages or to be returned to the
+					- 2. a **variable** (`?var`) that stores a list of **entities** that has the specified **attribute** that can be used in later stages, or to be returned to the `pull` clause
 					- 3. a **variable** that is set from input that is used to find matching **entities**
 						- in the case of [[Logseq]], it is in the `:input [ ]` clause
 					- *if omitted,* it will return the **entity/entities** that have the **attribute** defined in this **where-clause**
