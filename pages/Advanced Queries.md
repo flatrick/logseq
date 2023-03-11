@@ -28,7 +28,7 @@ alias:: [[Datalog]], [[Datascript]]
 				- using the "pull API"
 				- asking for all attributes found and stored in `?VARIABLE`
 			- #### :where ...
-				- the initial variable
+				- the initial variable is the collection the operation will be performed on
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
