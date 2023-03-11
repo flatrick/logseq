@@ -29,7 +29,9 @@ alias:: [[Datalog]], [[Datascript]]
 			- #### `(pull ?VARIABLE [*])` / `(pull ?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2])`
 				- by using the **Pull Syntax/API**, we can ask for some/all **attributes** of the **entities**
 				- `?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2]`
-					- this would return all the two
+					- this would return a list of all entities, showing only the two **values** for each **entity**
+				- `(pull ?VARIABLE [*])`
+					- this would return a list of all entities, showing all **values** for each **entity**
 			- #### :in
 				-
 			- #### :where ...
