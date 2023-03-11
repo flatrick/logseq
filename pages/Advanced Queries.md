@@ -13,12 +13,17 @@ alias:: [[Datalog]], [[Datascript]]
 	- Queries are written in [[Extensible Data Notation]]
 		- simple
 		- declarative
-		- loc
+		- logic
+		- `$name` refers to a database
+		- `?name` refers to a variable
+		-
 - # The parts of a query
 	- ## :title
 	- ## :query
 		- ### :find
 			- #### `(pull ?VARIABLE [*]`
+				- using the "pull API"
+				- asking for all attributes found and stored in `?
 			- #### :where ...
 	- ## :inputs
 	- ## :view
