@@ -4,11 +4,19 @@ alias:: [[Datalog]], [[Datascript]]
 	- according to some docs, [[Logseq]] treats `?b` and `?p` differently
 		- `?b` = block
 		- `?p` = page
-		- LATER Verify if this is really true
+		- LATER Verify if this is really true or a misunderstanding that has spread
 		  :LOGBOOK:
 		  CLOCK: [2023-03-11 Sat 14:39:28]
 		  :END:
-	-
+- # :title
+- # :query
+	- # :find
+	- # :where
+- # :inputs
+- # :view
+- # :result-transform
+	- # (fn [ ])
+-
 - ```clojure
   {:title  [:h2 "Your query title"]
    :query  [:find (pull ?b [*])
