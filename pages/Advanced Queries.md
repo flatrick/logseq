@@ -1,6 +1,7 @@
 alias:: [[Datalog]], [[Datascript]]
 
 - # Unsorted notes
+  collapsed:: true
 	- a questionmark followed by letters are used as placeholders (variables) for data
 	  collapsed:: true
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
@@ -18,6 +19,7 @@ alias:: [[Datalog]], [[Datascript]]
 		- `?name` refers to a variable
 		- `_ATTRIBUTE` will ask for the parent that holds the specific attribute
 - # The parts of a query
+  collapsed:: true
 	- ## :title
 	- ## :query
 		- ### :find
@@ -46,6 +48,12 @@ alias:: [[Datalog]], [[Datascript]]
 	  ```
 - # Links
 	- https://max-datom.com/
+	- [Learn DataLog Today](https://www.learndatalogtoday.org/)
 	- https://qwxlea.github.io/#/page/datalog%2FIntro%20to%20Datalog
 	- https://youtu.be/tV4pHW_WOrY
-	-
+	- [Logseq Schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
+	- [Logseq Rules](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/rules.cljc)
+	- [Learning resources for advanced queries (Datalog)](https://discuss.logseq.com/t/learning-resources-for-advanced-queries-datalog/8619)
+	- [Advanced Queries - Docs Logseq](https://docs.logseq.com/#/page/advanced%20queries)
+	- [Datomic Tutorial - ](https://github.com/ftravers/datomic-tutorial)
+	- Missing Link Tutorials
