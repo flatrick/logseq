@@ -38,11 +38,13 @@ alias:: [[Datalog]], [[Datascript]]
 				- the **initial variable** is the collection the operation will be performed on
 				- the second part is the **attribute** to be looked at
 				- the third/last part *(optional)* is either:
+				  collapsed:: true
 					- a string/int that it will use to find **entities** where the **attribute** matches
 					- or it will be a **variable** (`?var`) that stores the **attribute**'s value in
 					- *if omitted,* it will return the **entity/entities** that have the **attribute** defined in this **where-clause**
 						- more specifically, their *unique identifier* will be returned
 							- in the **:find** clause we can select the specific **attribute** to extract
+				- multiple where-clauses are implicitly AND (i.e. all )
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
