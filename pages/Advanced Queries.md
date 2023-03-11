@@ -21,7 +21,6 @@ alias:: [[Datalog]], [[Datascript]]
 		- `_` can be used as a wildcard for the parts you want to discard
 - # Hiccup
 - # The parts of a query
-  collapsed:: true
 	- ## :title
 	- ## :query
 		- ### :find
