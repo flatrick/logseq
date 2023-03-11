@@ -17,8 +17,8 @@ alias:: [[Datalog]], [[Datascript]]
 		- `$name` refers to a database
 		- `?name` refers to a variable
 		- `_ATTRIBUTE` will ask for the parent that holds the specific attribute
-		- `:keyword` / `:namespace/keyword` can refer to:
-			- functions or attribute-names
+		- `:keyword` / `:namespace/keyword` can refer to **functions** or **attribute-names**
+		- `_` can be used as a wildcard for the parts you want to discard
 - # Hiccup
 - # The parts of a query
 	- ## :title
