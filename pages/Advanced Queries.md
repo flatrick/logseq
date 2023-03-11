@@ -1,7 +1,6 @@
 alias:: [[Datalog]], [[Datascript]]
 
 - # Unsorted notes
-  collapsed:: true
 	- a questionmark followed by letters are used as placeholders (variables) for data
 	  collapsed:: true
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
@@ -18,6 +17,8 @@ alias:: [[Datalog]], [[Datascript]]
 		- `$name` refers to a database
 		- `?name` refers to a variable
 		- `_ATTRIBUTE` will ask for the parent that holds the specific attribute
+		- `:keyword` / `:namespace/keyword` can refer to:
+			- functions or attribute-names
 - # The parts of a query
   collapsed:: true
 	- ## :title
