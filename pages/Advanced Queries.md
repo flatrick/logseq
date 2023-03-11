@@ -26,9 +26,10 @@ alias:: [[Datalog]], [[Datascript]]
 		- ### :find
 		  id:: 640c9a94-4943-47d3-bea4-eed3a8a7ee7b
 			- if only supply a variable-name, the ID of the matched entity will be returned
-			- #### `(pull ?VARIABLE [*]`
+			- #### `(pull ?VARIABLE [*])` / `(pull ?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2])`
 				- by using the **Pull Syntax/API**, we can ask for some/all **attributes** of the **entities**
-				- `?VARIABLE [:ATTRIBUTE1 ]`
+				- `?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2]`
+					- this would return all the two
 			- #### :in
 				-
 			- #### :where ...
