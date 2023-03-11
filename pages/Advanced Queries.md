@@ -41,8 +41,8 @@ alias:: [[Datalog]], [[Datascript]]
 					   :in $ ?day
 					   :where
 					   [$ ?d :journal/date ?day]
-					   [$ ?m :movie/cast ?p]
-					   [$ ?m :movie/title ?person] ]
+					   [$ ?s :staff/employee ?p]
+					   [$ ?s :staff/name ?person] ]
 					  :input [ :today ]
 					  ```
 					- when used outside of [[Logseq]], these variables can be supplied when calling this query
