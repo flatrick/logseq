@@ -45,7 +45,8 @@ alias:: [[Datalog]], [[Datascript]]
 					   [$ ?m :movie/title ?person] ]
 					  :input [ :today ]
 					  ```
-					- if
+					- when used outside of [[Logseq]], these variables can be supplied when calling this query
+				-
 			- #### :where ...
 				- the **initial variable** is the collection the operation will be performed on
 				- the second part is the **attribute** to be looked at
