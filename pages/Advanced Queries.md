@@ -35,7 +35,16 @@ alias:: [[Datalog]], [[Datascript]]
 			- #### :in _(optional)_
 				- **:in** can be omitted and then it will use the entire database
 				- when used, you need to define which database to use *(`$` can often be used as a shortcut)*
-				- to use inputs
+				- to use dynamic values as input, we need to supply the variable here (`?var`)
+					- ```clojure
+					  [:find ?title
+					   :in $ ?today
+					   :where
+					   [$ ?p :person/name ?name]
+					   [$ ?m :movie/cast ?p]
+					   [$ ?m :movie/title ?title]]
+					  :input [  ]
+					  ```
 			- #### :where ...
 				- the **initial variable** is the collection the operation will be performed on
 				- the second part is the **attribute** to be looked at
