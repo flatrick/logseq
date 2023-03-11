@@ -44,7 +44,14 @@ alias:: [[Datalog]], [[Datascript]]
 					- *if omitted,* it will return the **entity/entities** that have the **attribute** defined in this **where-clause**
 						- more specifically, their *unique identifier* will be returned
 							- in the **:find** clause we can select the specific **attribute** to extract
-				- multiple where-clauses are implicitly AND (i.e. all )
+				- multiple **where-clauses** are implicitly added as **AND**
+					- in other words, all clauses must match with an **entity** for it to be returned
+				- the following **where-clause** will only match **entities** that has the **attribute** `age` *AND* the **value** of `age` is higher than `21`
+					- ```clojure
+					  :where
+					  [?e :user/age ?age]
+					  [(>= ?age 21)]
+					  ```
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
