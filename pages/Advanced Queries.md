@@ -1,5 +1,6 @@
 alias:: [[Datalog]], [[Datascript]]
 
+-
 - `?b` = block
 - `?p` = page
 - ```clojure
