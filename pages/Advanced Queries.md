@@ -34,6 +34,7 @@ alias:: [[Datalog]], [[Datascript]]
 					- this would return a list of all entities, showing all **values** for each **entity**
 			- #### :in _(optional)_
 				- **:in** can be omitted and then it will use the entire database
+				- when used, you need to define which database to use *(`$` can often be used as a shortcut)*
 				-
 			- #### :where ...
 				- the **initial variable** is the collection the operation will be performed on
