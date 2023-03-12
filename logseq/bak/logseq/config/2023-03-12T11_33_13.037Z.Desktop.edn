@@ -195,7 +195,7 @@
             :in $ ?start ?next
             :where
             [?h :block/marker ?marker]
-            [(contains? #{"WAITING" "LATER" "TODO"} ?marker)]
+            [(contains? #{"NOW" "LATER" "TODO"} ?marker)]
             [?h :block/page ?p]
             [?p :block/journal? true]
             [?p :block/journal-day ?d]

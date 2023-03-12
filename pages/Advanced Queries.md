@@ -1,7 +1,8 @@
 alias:: [[Datalog]], [[Datascript]]
-tags:: [[Extensible Data Notation]]
+tags:: [[Extensible Data Notation]], [[Logseq]]
 
 - # Unsorted notes
+  collapsed:: true
 	- a questionmark followed by letters are used as placeholders (variables or symbols) for data
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
 			- `?b` = block
@@ -22,6 +23,7 @@ tags:: [[Extensible Data Notation]]
 			- It is a blank placeholder, *matching anything without binding or unifying*
 				- Using a variable instead of **_** will cause unnecessary work for the query engine
 - # Grammar / Terminology
+  collapsed:: true
 	- `''` = literal
 	- `""` = string
 	- `[]` = list or vector
@@ -33,7 +35,7 @@ tags:: [[Extensible Data Notation]]
 	- `:keyword` = keywords are functions we use to describe what/how to get the data we want
 	- `:namespace/keyword` = a keyword in a namespace.
 		- Namespaces are used to show a relationship between multiple keywords
-	- `?symbol` = symbols are what most other languages would call a variabe.
+	- `?symbol` = symbols are what most other languages would call a **variable**.
 		- It holds (a reference to) data, either input from the user or output from a step
 - # Hiccup
 - # The parts of a query
@@ -43,14 +45,16 @@ tags:: [[Extensible Data Notation]]
 		  id:: 640c9a94-4943-47d3-bea4-eed3a8a7ee7b
 			- if you only supply a variable-name, the ID of the matched entity will be returned
 			- #### Pull Syntax/API
+			  collapsed:: true
 				- by using the **Pull Syntax/API**, we can ask for some or all **attributes** of the **entities**
 				- `?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2]`
 					- this would return a list of all **entities**, showing only the two **values** of the requested **attributes** for each **entity**
 				- `(pull ?VARIABLE [*])`
 					- this would return a list of all entities, showing all **values** for each **entity** thanks to the wildcard *(the asterisk)*
 			- #### :in _(optional)_
+			  collapsed:: true
 				- **:in** can be omitted and then it will use the entire database
-				- when used, you need to define which database to use *(`$` can often be used as a shortcut)*
+				- when used, you first need to define which database to use by writing `$`
 				- to use dynamic values as input, we need to supply the variable here (`?var`)
 					- ```clojure
 					  [ :find ?person
@@ -58,7 +62,7 @@ tags:: [[Extensible Data Notation]]
 					   :where
 					   [$ ?d :meeting/date ?day]
 					   [$ ?s :staff/employee ?p]
-					   [$ ?s :staff/name ?person] ]
+					   [$ ?p :staff/name ?person] ]
 					  :input [ :today ]
 					  ```
 						- this query will list the names of all people who attended the meeting today using the special **macro** `:today`
@@ -66,16 +70,17 @@ tags:: [[Extensible Data Notation]]
 					- if more than one dynamic values are needed, all of these must be defined in the `:in` clause
 						- and in the case of [[Logseq]], their values must be added to `:input [ ]`
 				- ##### collections #unfinished
-					- If you want to search for multiple entities with different values, you can use
-					- ```clojure
-					  [:find ?title
-					   :in $ [?director ...]
-					   :where
-					   [?p :person/name ?director]
-					   [?m :movie/director ?p]
-					   [?m :movie/title ?title]]
-					  :input [ "James Cameron" "Ridley Scott" ]
-					  ```
+					- If you want to search for multiple entities with different values, you can use three dots after the variable name `...`
+						- ```clojure
+						  [:find ?title
+						   :in $ [?director ...]
+						   :where
+						   [?p :person/name ?director]
+						   [?m :movie/director ?p]
+						   [?m :movie/title ?title]]
+						  :input [ "James Cameron" "Ridley Scott" ]
+						  ```
+						- this query would do two searches, one per input, and return them as one result
 			- #### :where
 				- the initial **variable** is the collection the operation will be performed on
 					- if it hasn't been used yet, it will point to the whole database
@@ -90,9 +95,6 @@ tags:: [[Extensible Data Notation]]
 					- *if omitted,* it will return the **entity/entities** that have the **attribute** defined in this **where-clause**
 						- more specifically, their *unique identifier* will be returned
 							- in the **:find** clause we can select the specific **attribute** to extract
-				- multiple **where-clauses** are implicitly added as **AND**
-				  collapsed:: true
-					- in other words, all clauses must match with an **entity** for it to be returned
 				- the following **where-clause** will only match **entities** that has the **attribute** `age` and where the **value** of `age` is `21` or higher
 				  collapsed:: true
 					- ```clojure
@@ -104,6 +106,13 @@ tags:: [[Extensible Data Notation]]
 						- the **entities** must have the **attribute** `:user/age`
 						- we keep track of these entities' `:user/age`-**attribute** in the **variable** `?age`
 						- then we say that we only want the **entities** where `:user/age` is **21 or higher**
+				- ##### AND (filtering on multiple values)
+					- [[Datascript]] and [[Datalog]] uses **AND** implicitly so any new where-clauses will all have to match
+				- ##### OR
+					- https://docs.datomic.com/on-prem/query/query.html#or-clauses
+					-
+				- ##### NOT
+					- https://docs.datomic.com/on-prem/query/query.html#not-clauses
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
