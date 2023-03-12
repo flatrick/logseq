@@ -47,30 +47,32 @@ tags:: [[Extensible Data Notation]], [[Logseq]]
 			- #### Pull Syntax/API
 			  collapsed:: true
 				- by using the **Pull Syntax/API**, we can ask for some or all **attributes** of the **entities**
-				- `?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2]`
+				- `(pull ?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2])`
 					- this would return a list of all **entities**, showing only the two **values** of the requested **attributes** for each **entity**
 				- `(pull ?VARIABLE [*])`
 					- this would return a list of all entities, showing all **values** for each **entity** thanks to the wildcard *(the asterisk)*
 			- #### :in _(optional)_
-			  collapsed:: true
-				- **:in** can be omitted and then it will use the entire database
+				- **:in** can be omitted in [[Logseq]] when you aren't using input variables
+				  collapsed:: true
+					- since there is only one database, it will know which one to use
+					- https://docs.datomic.com/on-prem/query/query.html#implicit-data-source
 				- when used, you first need to define which database to use by writing `$`
-				- to use dynamic values as input, we need to supply the variable here (`?var`)
+				- to use dynamic values as input, we need to supply the variable in the `:in`-clause
 					- ```clojure
 					  [ :find ?person
 					   :in $ ?day
 					   :where
 					   [$ ?d :meeting/date ?day]
-					   [$ ?s :staff/employee ?p]
+					   [$ ?d :meeting/participants ?p]
 					   [$ ?p :staff/name ?person] ]
 					  :input [ :today ]
 					  ```
 						- this query will list the names of all people who attended the meeting today using the special **macro** `:today`
 					- when used outside of [[Logseq]], these variables can be supplied when calling this query
-					- if more than one dynamic values are needed, all of these must be defined in the `:in` clause
-						- and in the case of [[Logseq]], their values must be added to `:input [ ]`
+					- if more than one dynamic value is needed, all of these must be defined in the `:in`-clause
+						- and in the case of [[Logseq]], their values must be added to `:input [ ]` clause further down
 				- ##### collections #unfinished
-					- If you want to search for multiple entities with different values, you can use three dots after the variable name `...`
+					- If you want to search for multiple entities with different values, you can use three dots after the variable name (`[?var ...]`)
 						- ```clojure
 						  [:find ?title
 						   :in $ [?director ...]
@@ -82,6 +84,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]]
 						  ```
 						- this query would do two searches, one per input, and return them as one result
 			- #### :where
+			  collapsed:: true
 				- the initial **variable** is the collection the operation will be performed on
 					- if it hasn't been used yet, it will point to the whole database
 					- if it was used as the last part in a previous step
@@ -113,6 +116,10 @@ tags:: [[Extensible Data Notation]], [[Logseq]]
 					-
 				- ##### NOT
 					- https://docs.datomic.com/on-prem/query/query.html#not-clauses
+			- #### Aggregates (min, max, sum)
+				- https://docs.datomic.com/on-prem/query/query.html#aggregates
+			- #### :with
+				- https://docs.datomic.com/on-prem/query/query.html#with
 	- ## :inputs
 	- ## :view
 	  collapsed:: true
@@ -121,6 +128,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]]
 		- ### `(fn [query-result] ...)`
 	- ## :collapsed?
 	- ## :rules [...]
+		- https://docs.datomic.com/on-prem/query/query.html#rules
 - # Example
 	- ```clojure
 	  {:title  [:h2 "Your query title"]
