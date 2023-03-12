@@ -42,13 +42,17 @@ tags:: [[Extensible Data Notation]], [[Logseq]]
 	- ## :query
 		- ### :find
 			- if you only supply a variable-name, the ID of the matched entity will be returned
+			- #### Aggregates (min, max, sum)
+				- https://docs.datomic.com/on-prem/query/query.html#aggregates
 			- #### Pull Syntax/API
+			  collapsed:: true
 				- by using the **Pull Syntax/API**, we can ask for some or all **attributes** of the **entities**
 				- `(pull ?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2])`
 					- this would return a list of all **entities**, showing only the two **values** of the requested **attributes** for each **entity**
 				- `(pull ?VARIABLE [*])`
 					- this would return a list of all entities, showing all **values** for each **entity** thanks to the wildcard *(the asterisk)*
 			- #### :in _(optional)_
+			  collapsed:: true
 				- **:in** can be omitted in [[Logseq]] when you aren't using input variables
 					- since there is only one database, it will know which one to use
 					- https://docs.datomic.com/on-prem/query/query.html#implicit-data-source
@@ -96,36 +100,53 @@ tags:: [[Extensible Data Notation]], [[Logseq]]
 				- the following **where-clause** will only match **entities** that has the **attribute** `age` and where the **value** of `age` is `21` or higher
 					- ```clojure
 					  :where
-					  [?e :user/age ?age]
-					  [(>= ?age 21)]
+					  	[?e :user/age ?age]
+					  	[(>= ?age 21)]
 					  ```
 						- `?e` is the _collection of **entities**_ that we want to get data from
 						- the **entities** must have the **attribute** `:user/age`
 						- we keep track of these entities' `:user/age`-**attribute** in the **variable** `?age`
 						- then we say that we only want the **entities** where `:user/age` is **21 or higher**
 				- ##### AND (filtering on multiple values)
-					- [[Datascript]] and [[Datalog]] uses **AND** implicitly so any new where-clauses will all have to match
+					- [[Datascript]] uses **AND** implicitly so any new where-clauses will all have to match
 				- ##### OR
 					- https://docs.datomic.com/on-prem/query/query.html#or-clauses
-					-
+					- ```clojure
+					  :where
+					  	[?e :user/age ?age]
+					  	(or
+					  		[(>= ?age 21)]
+					       	[(<= ?age 12)]
+					       )
+					  ```
 				- ##### NOT
 					- https://docs.datomic.com/on-prem/query/query.html#not-clauses
-			- #### Aggregates (min, max, sum)
-				- https://docs.datomic.com/on-prem/query/query.html#aggregates
+					- ``` clojure
+					  :where
+					  	[?e :user/age ?age]
+					  	(not
+					  		[(>= ?age 21)]
+					       	[(<= ?age 12)]
+					       )
+					  ```
 			- #### :with
 				- https://docs.datomic.com/on-prem/query/query.html#with
 	- ## :inputs
 	- ## :view
+	  collapsed:: true
 		- ## `(fn [query-result] [:div ...])`
 	- ## :result-transform
+	  collapsed:: true
 		- ### `(fn [query-result] ...)`
 	- ## :collapsed?
 	- ## :rules [...]
+	  collapsed:: true
 		- https://docs.datomic.com/on-prem/query/query.html#rules
 - # Example
 	- ```clojure
 	  {:title  [:h2 "Your query title"]
 	   :query  [:find (pull ?b [*])
+	            :in $
 	            :where ...]
 	   :inputs [...]
 	   :view (fn [query-result] [:div ...]) ;; or :keyword from config.edn
