@@ -1,9 +1,8 @@
 alias:: [[Datalog]], [[Datascript]]
+tags:: [[Extensible Data Notation]]
 
 - # Unsorted notes
-  collapsed:: true
-	- a questionmark followed by letters are used as placeholders (variables) for data
-	  collapsed:: true
+	- a questionmark followed by letters are used as placeholders (variables or symbols) for data
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
 			- `?b` = block
 			- `?p` = page
@@ -19,7 +18,23 @@ alias:: [[Datalog]], [[Datascript]]
 		- `?name` refers to a variable
 		- `_ATTRIBUTE` will ask for the parent that holds the specific attribute
 		- `:keyword` / `:namespace/keyword` can refer to **functions** or **attribute-names**
-		- `_` can be used as a wildcard for the parts you want to discard
+		- `_` When we don't care about certain components of the tuples in a query, but must put something in the clause in order to get to the positions we care about we can use the underscore symbol
+			- It is a blank placeholder, *matching anything without binding or unifying*
+				- Using a variable instead of **_** will cause unnecessary work for the query engine
+- # Grammar / Terminology
+	- `''` = literal
+	- `""` = string
+	- `[]` = list or vector
+	- `{}` = map {k1 v1 ...}
+	- `()` = grouping
+	- `|` = choice
+	- `?` = zero or more
+	- `+` = one or more
+	- `:keyword` = keywords are functions we use to describe what/how to get the data we want
+	- `:namespace/keyword` = a keyword in a namespace.
+		- Namespaces are used to show a relationship between multiple keywords
+	- `?symbol` = symbols are what most other languages would call a variabe.
+		- It holds (a reference to) data, either input from the user or output from a step
 - # Hiccup
 - # The parts of a query
 	- ## :title
@@ -34,7 +49,6 @@ alias:: [[Datalog]], [[Datascript]]
 				- `(pull ?VARIABLE [*])`
 					- this would return a list of all entities, showing all **values** for each **entity** thanks to the wildcard *(the asterisk)*
 			- #### :in _(optional)_
-			  collapsed:: true
 				- **:in** can be omitted and then it will use the entire database
 				- when used, you need to define which database to use *(`$` can often be used as a shortcut)*
 				- to use dynamic values as input, we need to supply the variable here (`?var`)
@@ -52,7 +66,7 @@ alias:: [[Datalog]], [[Datascript]]
 					- if more than one dynamic values are needed, all of these must be defined in the `:in` clause
 						- and in the case of [[Logseq]], their values must be added to `:input [ ]`
 				- ##### collections #unfinished
-					- If you want to find
+					- If you want to search for multiple entities with different values, you can use
 					- ```clojure
 					  [:find ?title
 					   :in $ [?director ...]
