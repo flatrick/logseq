@@ -161,8 +161,12 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 		- [Lesson 3](https://discuss.logseq.com/t/lesson-3-how-to-think-like-a-computer-using-boolean-logic/10074) How to Think Like a Computer Using Boolean Logic
 		- [Lesson 4](https://discuss.logseq.com/t/lesson-4-how-to-search-your-notes-using-query-filters-and-links/10131) How to Search Your Notes Using Query Filters and Links
 		- [Lesson 5](https://discuss.logseq.com/t/lesson-5-how-to-power-your-workflows-using-properties-and-dynamic-variables/10173) How to Power Your Workflows Using Properties and Dynamic Variables
+		- [Challenge 1](https://discuss.logseq.com/t/challenge-1-build-a-dynamic-notes-index/10274) Build a Dynamic Notes Index
+		- [Challenge 2](https://discuss.logseq.com/t/challenge-2-build-a-content-consumption-pipeline/10305) Build a Content Consumption Pipeline
+		- [Challenge 3](https://discuss.logseq.com/t/challenge-3-build-a-content-creation-pipeline/10333) Build a Content Creation Pipeline
+		- [Challenge 4](https://discuss.logseq.com/t/challenge-4-build-a-project-management-dashboard/10384) Build a Project Management Dashboard
+		- [Challenge 5](https://discuss.logseq.com/t/challenge-5-build-a-personal-learning-dashboard/10418) Build a Personal Learning Dashboard
 	- ## unsorted list
-	  collapsed:: true
 		- [Max Datom - An Interactive Datomic Learning Experience](https://max-datom.com/)
 		- [Datomic Queries and Rules](https://docs.datomic.com/on-prem/query/query.html)
 		- [Learn DataLog Today](https://www.learndatalogtoday.org/)
