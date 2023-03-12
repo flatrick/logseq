@@ -1,1 +1,2 @@
--
+- [[Logseq]]
+	- [[Advanced Queries]]
