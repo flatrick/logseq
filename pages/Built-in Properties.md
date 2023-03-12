@@ -1,7 +1,8 @@
-- **Legend for properties below:**
-	- (1) and (N) indicate how many values you may define, one and multiple values respectively.
-	- (page) and (block) indicates a property is a page property or block property only. Otherwise a property can be both a page property and block property.
-- **Editable properties**
+- # Legend for properties below:
+	- `(1)` and `(N)` indicate how many values you may define, one and multiple values respectively
+	- `(page)` and `(block)` indicates a property is a page property or block property only
+		- *Otherwise a property can be both a page property and block property*
+- # Editable properties
 	- `icon` (1) (page) - define icon identifier for a page.
 	- `title` (1) (page) - overrides the title of a page to be different from the file name.
 	- `tags` (N) - get listed in their own section "Pages tagged with X" below a page.
@@ -12,16 +13,38 @@
 	- `filters` (N) (page) - store selected filters for linked references on page-level. object with **booleans**
 	- `public` (1) (page) - defines whether a page should be included in an export. **boolean**
 	- `exclude-from-graph-view` (1) (page) - defines whether a page should be excluded in global graph view. **boolean**
-- **Hidden Properties**
+- # Hidden Properties
 	- `collapsed` (1) (block) - specifies whether a block is collapsed.
 	- `id` (1) (block) - specifies a block id.
+		- `custom-id` ?
 	- `created-at` (1) (block) - deprecated property that defines the created date/time stamps in [Unix time](https://en.wikipedia.org/wiki/Unix_time)
+		- `created_at` ?
 	- `updated-at` (1) (block) - deprecated property that defines the updated date/time stamps in [Unix time](https://en.wikipedia.org/wiki/Unix_time)
 		- previously called `last-modified-at`
+			- `last_modified_at`
+		- `updated_at` ?
 	- `query-table` (1) (block) - marks a query to be shown as the table view.
 	- `query-properties` (N) (block) - properties user has chosen to see in query table.
 	- `query-sort-by` (1) (block) - property by which to sort query table
 	- `query-sort-desc` (1) (block) - property sort direction. boolean where true is descending
+	- `background-color` ?
+	- `background_color` ?
+	- `heading` ?
+	- `ls-type` ?
+	- `hl-type` ?
+	- `hl-page` ?
+	- `hl-stamp` ?
+	- `hl-color` ?
+	- `logseq.macro-name` ?
+	- `logseq.macro-arguments` ?
+	- `logseq.tldraw.page` ?
+	- `logseq.tldraw.shape` ?
+	- ## Task markers
+		- `todo`
+		- `doing`
+		- `later`
+		- `now`
+		- `done`
 - # Links
 	- [Properties - docs.Logseq.com](https://docs.logseq.com/#/page/properties)
 	- [Built-in Properties - docs.Logseq.com](https://docs.logseq.com/#/page/built-in%20properties)
