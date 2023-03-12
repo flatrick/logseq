@@ -1,12 +1,12 @@
 tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 
-- `{{query Logseq}}`
+- `{{query [[Logseq]]}}`
   collapsed:: true
-	- {{query Logseq}}
-- `{{query Query}}`
+	- {{query [[Logseq]]}}
+- `{{query "Query"}}`
   collapsed:: true
-	- {{query Query}}
-- `{{query (and [[Query]] [[Logseq]])}}`
+	- {{query "Query"}}
+- `{{query (and "Query" "Logseq")}}`
   collapsed:: true
-	- {{query (and [[Query]] [[Logseq]])}}
+	- {{query (and "Query" "Logseq")}}
 - `{{query (and [[Logseq]] <% current page %>) }}` #[[Dynamic Variables]]
