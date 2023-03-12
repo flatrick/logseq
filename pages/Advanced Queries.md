@@ -1,5 +1,5 @@
-alias:: [[Datalog]], [[Datascript]]
-tags:: [[Extensible Data Notation]], [[Logseq]]
+filters:: {}
+tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[Database]], [[Query]], [[Clojure]]
 
 - # Unsorted notes
   collapsed:: true
@@ -36,7 +36,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]]
 		- Namespaces are used to show a relationship between multiple keywords
 	- `?symbol` = symbols are what most other languages would call a **variable**.
 		- It holds (a reference to) data, either input from the user or output from a step
-- # Hiccup
+- # [[Hiccup]]
 - # The parts of a query
 	- ## :title
 	- ## :query
@@ -155,14 +155,22 @@ tags:: [[Extensible Data Notation]], [[Logseq]]
 	  :rules [...]}
 	  ```
 - # Links
-	- [Max Datom - An Interactive Datomic Learning Experience](https://max-datom.com/)
-	- [Datomic Queries and Rules](https://docs.datomic.com/on-prem/query/query.html)
-	- [Learn DataLog Today](https://www.learndatalogtoday.org/)
-	- [Datascript - Getting started](https://github.com/tonsky/datascript/wiki/Getting-started)
-	- [Datascript and Datomic: Data Modeling for Heroes - Mark Bastian](https://youtu.be/tV4pHW_WOrY)
-	- [Logseq Schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
-	- [Logseq Rules](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/rules.cljc)
-	- [Learning resources for advanced queries (Datalog)](https://discuss.logseq.com/t/learning-resources-for-advanced-queries-datalog/8619)
-	- [Advanced Queries - Docs Logseq](https://docs.logseq.com/#/page/advanced%20queries)
-	- [Datomic Tutorial - Missing Link Tutorials](https://github.com/ftravers/datomic-tutorial)
-	- [Intro to Datalog - qwxlea](https://qwxlea.github.io/#/page/datalog%2FIntro%20to%20Datalog)
+	- ## [[Logseq]] Query Learning Sprint (Summer 2022)
+		- [Lesson 1](https://discuss.logseq.com/t/lesson-1-what-are-logseq-queries-and-why-you-should-learn-to-use-them/9987) What Are Logseq Queries and Why You Should Learn to Use Them
+		- [Lesson 2](https://discuss.logseq.com/t/lesson-2-why-you-should-outline-and-link-your-notes/10038) Why You Should Outline and Link Your Notes
+		- [Lesson 3](https://discuss.logseq.com/t/lesson-3-how-to-think-like-a-computer-using-boolean-logic/10074) How to Think Like a Computer Using Boolean Logic
+		- [Lesson 4](https://discuss.logseq.com/t/lesson-4-how-to-search-your-notes-using-query-filters-and-links/10131) How to Search Your Notes Using Query Filters and Links
+		- [Lesson 5](https://discuss.logseq.com/t/lesson-5-how-to-power-your-workflows-using-properties-and-dynamic-variables/10173) How to Power Your Workflows Using Properties and Dynamic Variables
+	- ## unsorted list
+	  collapsed:: true
+		- [Max Datom - An Interactive Datomic Learning Experience](https://max-datom.com/)
+		- [Datomic Queries and Rules](https://docs.datomic.com/on-prem/query/query.html)
+		- [Learn DataLog Today](https://www.learndatalogtoday.org/)
+		- [Datascript - Getting started](https://github.com/tonsky/datascript/wiki/Getting-started)
+		- [Datascript and Datomic: Data Modeling for Heroes - Mark Bastian](https://youtu.be/tV4pHW_WOrY)
+		- [Logseq Schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
+		- [Logseq Rules](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/rules.cljc)
+		- [Learning resources for advanced queries (Datalog)](https://discuss.logseq.com/t/learning-resources-for-advanced-queries-datalog/8619)
+		- [Advanced Queries - Docs Logseq](https://docs.logseq.com/#/page/advanced%20queries)
+		- [Datomic Tutorial - Missing Link Tutorials](https://github.com/ftravers/datomic-tutorial)
+		- [Intro to Datalog - qwxlea](https://qwxlea.github.io/#/page/datalog%2FIntro%20to%20Datalog)

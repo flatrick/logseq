@@ -344,7 +344,7 @@
  :journal/page-title-format "yyyy-MM-dd"
  :editor/preferred-pasting-file? true
  :feature/enable-flashcards? false
- :graph/settings {:journal? true, :builtin-pages? true}
+ :graph/settings {:journal? false}
 
  ;; specify the format of the filename for journal files
  ;; :journal/file-name-format "yyyy_MM_dd"

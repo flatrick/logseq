@@ -1,2 +1,4 @@
 - [[Logseq]]
+	- [[Simple Queries]]
 	- [[Advanced Queries]]
+	- [[Built-in Properties]]
