@@ -9,4 +9,4 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 - `{{query (and [[Query]] [[Logseq]])}}`
   collapsed:: true
 	- {{query (and [[Query]] [[Logseq]])}}
-- `{{query (and [[Logseq]] <% current page %>) }}`
+- `{{query (and [[Logseq]] <% current page %>) }}` #[[Dynamic Variables]]
