@@ -2,3 +2,4 @@
 	- [[Simple Queries]]
 	- [[Advanced Queries]]
 	- [[Built-in Properties]]
+	- [[Dynamic Variables]]

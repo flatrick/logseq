@@ -21,7 +21,7 @@
 		- `created_at` ?
 	- `updated-at` (1) (block) - deprecated property that defines the updated date/time stamps in [Unix time](https://en.wikipedia.org/wiki/Unix_time)
 		- previously called `last-modified-at`
-			- `last_modified_at`
+			- `last_modified_at` ?
 		- `updated_at` ?
 	- `query-table` (1) (block) - marks a query to be shown as the table view.
 	- `query-properties` (N) (block) - properties user has chosen to see in query table.
@@ -30,11 +30,11 @@
 	- `background-color` ?
 	- `background_color` ?
 	- `heading` ?
-	- `ls-type` ?
-	- `hl-type` ?
-	- `hl-page` ?
-	- `hl-stamp` ?
-	- `hl-color` ?
+	- `ls-type` ? logseq..?
+	- `hl-type` ? highlight?
+	- `hl-page` ? highlight?
+	- `hl-stamp` ? highlight?
+	- `hl-color` ? highlight?
 	- `logseq.macro-name` ?
 	- `logseq.macro-arguments` ?
 	- `logseq.tldraw.page` ?

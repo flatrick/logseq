@@ -6,5 +6,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 - `{{query Query}}`
   collapsed:: true
 	- {{query Query}}
-- `{{query (and Query Logseq)}}`
+- `{{query (and [[Query]] [[Logseq]])}}`
+  collapsed:: true
 	- {{query (and [[Query]] [[Logseq]])}}
+- `{{query (and [[Logseq]] <% current page %>) }}`
