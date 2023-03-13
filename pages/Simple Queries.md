@@ -9,7 +9,5 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 - `{{query (and "Query" "Logseq")}}`
   collapsed:: true
 	- {{query (and "Query" "Logseq")}}
-- `{{query (and [[Logseq]] <% current page %>) }}` #[[Dynamic Variables]]
-	- #+BEGIN_QUERY
-	  
-	  #+END_QUERY
+- `{{query (and [[Dynamic Variables]] <% current page %> )}}` #[[Dynamic Variables]]
+	- {{query (and [[Dynamic Variables]] <% current page %> )}}
