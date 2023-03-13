@@ -3,7 +3,6 @@
 - # Daily Journal Template
   template:: Journal
   template-including-parent:: false
-  collapsed:: true
 	- # Thoughts
 	- ---
 	- # Tasks
