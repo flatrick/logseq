@@ -1,0 +1,5 @@
+- # Daily Journal Template
+	- # Thoughts
+	- # Tasks
+		- /tas
+	- # Meetings
