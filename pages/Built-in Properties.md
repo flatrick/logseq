@@ -1,3 +1,5 @@
+tags:: [[Properties]]
+
 - # Legend for properties below:
 	- `(1)` and `(N)` indicate how many values you may define, one and multiple values respectively
 	- `(page)` and `(block)` indicates a property is a page property or block property only

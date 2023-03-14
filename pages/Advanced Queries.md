@@ -45,14 +45,12 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 			- #### Aggregates (min, max, sum)
 				- https://docs.datomic.com/on-prem/query/query.html#aggregates
 			- #### Pull Syntax/API
-			  collapsed:: true
 				- by using the **Pull Syntax/API**, we can ask for some or all **attributes** of the **entities**
 				- `(pull ?VARIABLE [:ATTRIBUTE1 :ATTRIBUTE2])`
 					- this would return a list of all **entities**, showing only the two **values** of the requested **attributes** for each **entity**
 				- `(pull ?VARIABLE [*])`
 					- this would return a list of all entities, showing all **values** for each **entity** thanks to the wildcard *(the asterisk)*
 			- #### :in _(optional)_
-			  collapsed:: true
 				- **:in** can be omitted in [[Logseq]] when you aren't using input variables
 					- since there is only one database, it will know which one to use
 					- https://docs.datomic.com/on-prem/query/query.html#implicit-data-source
@@ -133,14 +131,11 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 				- https://docs.datomic.com/on-prem/query/query.html#with
 	- ## :inputs
 	- ## :view
-	  collapsed:: true
 		- ## `(fn [query-result] [:div ...])`
 	- ## :result-transform
-	  collapsed:: true
 		- ### `(fn [query-result] ...)`
 	- ## :collapsed?
 	- ## :rules [...]
-	  collapsed:: true
 		- https://docs.datomic.com/on-prem/query/query.html#rules
 - # Example
 	- ```clojure
@@ -160,7 +155,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 		- [Lesson 2](https://discuss.logseq.com/t/lesson-2-why-you-should-outline-and-link-your-notes/10038) Why You Should Outline and Link Your Notes
 		- [Lesson 3](https://discuss.logseq.com/t/lesson-3-how-to-think-like-a-computer-using-boolean-logic/10074) How to Think Like a Computer Using Boolean Logic
 		- [Lesson 4](https://discuss.logseq.com/t/lesson-4-how-to-search-your-notes-using-query-filters-and-links/10131) How to Search Your Notes Using Query Filters and Links
-		- [Lesson 5](https://discuss.logseq.com/t/lesson-5-how-to-power-your-workflows-using-properties-and-dynamic-variables/10173) How to Power Your Workflows Using Properties and Dynamic Variables
+		- [Lesson 5](https://discuss.logseq.com/t/lesson-5-how-to-power-your-workflows-using-properties-and-dynamic-variables/10173) How to Power Your Workflows Using [[Properties]] and [[Dynamic Variables]]
 		- [Challenge 1](https://discuss.logseq.com/t/challenge-1-build-a-dynamic-notes-index/10274) Build a Dynamic Notes Index
 		- [Challenge 2](https://discuss.logseq.com/t/challenge-2-build-a-content-consumption-pipeline/10305) Build a Content Consumption Pipeline
 		- [Challenge 3](https://discuss.logseq.com/t/challenge-3-build-a-content-creation-pipeline/10333) Build a Content Creation Pipeline
