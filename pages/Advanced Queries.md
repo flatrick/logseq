@@ -2,7 +2,6 @@ filters:: {}
 tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[Database]], [[Query]], [[Clojure]]
 
 - # Unsorted notes
-  collapsed:: true
 	- a questionmark followed by letters are used as placeholders (variables or symbols) for data
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
 			- `?b` = block
@@ -36,9 +35,9 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 		- Namespaces are used to show a relationship between multiple keywords
 	- `?symbol` = symbols are what most other languages would call a **variable**.
 		- It holds (a reference to) data, either input from the user or output from a step
-- # [[Hiccup]]
 - # The parts of a query
 	- ## :title
+		- ### [[Hiccup]]
 	- ## :query
 		- ### :find
 			- if you only supply a variable-name, the ID of the matched entity will be returned
