@@ -18,7 +18,7 @@
  ;; When creating the new journal page, the app will use your template if there is one.
  ;; You only need to input your template name here.
  :default-templates
- {:journals ""}
+ {:journals "Journal"}
 
  ;; Set a custom date format for journal page title
  ;; Example:
@@ -35,7 +35,7 @@
  :ui/show-full-blocks? false
 
  ;; Enable Block timestamp
- :feature/enable-block-timestamps? false
+ :feature/enable-block-timestamps? true
 
  ;; Enable remove accents when searching.
  ;; After toggle this option, please remember to rebuild your search index by press (cmd+c cmd+s).
@@ -52,14 +52,16 @@
 
  ;; Disable the built-in Scheduled tasks and deadlines query
  ;; :feature/disable-scheduled-and-deadline-query? true
-
+:feature/disable-scheduled-and-deadline-query? false
+ 
  ;; Specify the number of days in the future to display in the
  ;; scheduled tasks and deadlines query, with a default value of 0 which
  ;; only displays tasks for today.
  ;; Example usage:
  ;; Display all scheduled tasks and deadlines in the next 7 days
  ;; :scheduled/future-days 7
-
+:scheduled/future-days 14
+ 
  ;; Specify the date on which the week starts.
  ;; Goes from 0 to 6 (Monday to Sunday), default to 6
  :start-of-week 0
@@ -193,7 +195,7 @@
             :in $ ?start ?next
             :where
             [?h :block/marker ?marker]
-            [(contains? #{"NOW" "LATER" "TODO"} ?marker)]
+            [(contains? #{"WAITING" "LATER" "TODO"} ?marker)]
             [?h :block/page ?p]
             [?p :block/journal? true]
             [?p :block/journal-day ?d]
@@ -342,6 +344,7 @@
  :journal/page-title-format "yyyy-MM-dd"
  :editor/preferred-pasting-file? true
  :feature/enable-flashcards? false
+ :graph/settings {:journal? true, :builtin-pages? true}
 
  ;; specify the format of the filename for journal files
  ;; :journal/file-name-format "yyyy_MM_dd"
