@@ -2,6 +2,7 @@ filters:: {}
 tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[Database]], [[Query]], [[Clojure]]
 
 - # Unsorted notes
+  collapsed:: true
 	- a questionmark followed by letters are used as placeholders (variables or symbols) for data
 		- according to some docs, [[Logseq]] treats `?b` and `?p` differently
 			- `?b` = block
@@ -22,6 +23,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 			- It is a blank placeholder, *matching anything without binding or unifying*
 				- Using a variable instead of **_** will cause unnecessary work for the query engine
 - # Grammar / Terminology
+  collapsed:: true
 	- `''` = literal
 	- `""` = string
 	- `[]` = list or vector
@@ -36,6 +38,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 	- `?symbol` = symbols are what most other languages would call a **variable**.
 		- It holds (a reference to) data, either input from the user or output from a step
 - # The parts of a query
+  collapsed:: true
 	- ## :title
 		- ### [[Hiccup]]
 	- ## :query
@@ -136,7 +139,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 	- ## :collapsed?
 	- ## :rules [...]
 		- https://docs.datomic.com/on-prem/query/query.html#rules
-- # Example
+- # Examples
 	- ```clojure
 	  {:title  [:h2 "Your query title"]
 	   :query  [:find (pull ?b [*])
@@ -148,7 +151,17 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 	   :collapsed? true
 	  :rules [...]}
 	  ```
+	- ## Combining [[Simple Queries]] and [[Advanced Queries]]
+		- ```clojure
+		  {:title "🔨 All todos with current pages tag"
+		   :query (and (todo TODO DOING) [[Momolingo]])
+		   :result-transform (fn [result]
+		                       (sort-by (fn [h]
+		                                  (get h :block/priority "Z")) result))
+		   }
+		  ```
 - # Links
+  collapsed:: true
 	- ## [[Logseq]] Query Learning Sprint (Summer 2022)
 		- [Lesson 1](https://discuss.logseq.com/t/lesson-1-what-are-logseq-queries-and-why-you-should-learn-to-use-them/9987) What Are Logseq Queries and Why You Should Learn to Use Them
 		- [Lesson 2](https://discuss.logseq.com/t/lesson-2-why-you-should-outline-and-link-your-notes/10038) Why You Should Outline and Link Your Notes
