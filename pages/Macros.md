@@ -1,0 +1,1 @@
+- https://docs.logseq.com/#/page/macros
