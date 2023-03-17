@@ -1,3 +1,4 @@
+- **Tasks** is how [[Logseq]] helps you keep track of what to do
 - Creating a task can be done in multiple ways:
 	- These can written by hand (in uppercase) at the beginning of a block to turn it into a task (see example below)
 		- ```

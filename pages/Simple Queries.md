@@ -54,7 +54,6 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
   collapsed:: true
 	- {{query (all-page-tags)}}
 - # Search for #Task based on what state they are in
-	- [[Task]]s is how [[Logseq]] helps you keep track of what to do
 	- {{query (task now doing in-progress)}}
 	  query-table:: false
 	- {{query (task later todo)}}
