@@ -22,7 +22,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	- `{{query (page "Dynamic Variables")}}`
 	  collapsed:: true
 		- {{query (page "Dynamic Variables")}}
-- # Search for anywhere a [[Property]] has a specific value #[[unfinished]]
+- # Search for anywhere a [[Property]] has a specific value
   collapsed:: true
 	- By using [[Properties]] on our pages and blocks, we can make our notes searchable based on [[Metadata]]
 	- {{query (property alias "Property")}}
@@ -44,8 +44,10 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	- `{{query (between -7d +7d)}}`
 	  collapsed:: true
 		- {{query (between -7d +7d)}}
-- # Page-property #[[unfinished]]
-	- {{query (page-property alias "Property")}}
+- # Search for **pages** that has a Page-property
+	- {{query (page-property alias)}}
+# Search for **pages** that has a Page-property set to a specific value
+	- {{query (page-property alias "EDN")}}
 - # Search for pages that have specific tags
   collapsed:: true
 	- `{{query (Page-tags Clojure)}}`
