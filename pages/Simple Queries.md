@@ -1,6 +1,7 @@
 tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 
 - # Search for a specific word
+  collapsed:: true
 	- `{{query Logseq}}`
 	  collapsed:: true
 		- {{query "Logseq"}}
@@ -63,15 +64,18 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	- {{query (task wait waiting)}}
 	- {{query (task done canceled)}}
 - # Search for **blocks** that has a [[Priority]] set
+  collapsed:: true
 	- {{query (priority a)}}
 	- {{query (priority b)}}
 	- {{query (priority c)}}
 	- {{query (priority a b c)}}
 - # Search using [[Dynamic Variables]]
+  collapsed:: true
 	- `{{query (page <% current page %>) }}`
 	  collapsed:: true
 		- {{query (page <% current page %>) }}
 - # Search using multiple criterias
+  collapsed:: true
 	- ## AND
 		- `{{query (and "Query" "Logseq")}}`
 		  collapsed:: true
