@@ -173,10 +173,14 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 			- {{query (and "Query" (not "Logseq"))}}
 - # SORTING
 	- #+BEGIN_QUOTE
-	  Format: (sort-by key order) or (sort-by key)
+	  Format: 
+	  (sort-by property-name order) or (sort-by property-name)
 	  
-	  key: created-at | updated-at
-	  order: desc or asc, omit means desc.
+	  key: Can be any user property as well as built-in properties created-at  and updated-at.
+	  
+	  order: desc or asc, omit means desc.)
+	  
+	  Note that created-at and updated-at only work for pages.
 	  #+END_QUOTE
 	- collapsed:: true
 	  ```clojure
