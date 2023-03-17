@@ -24,7 +24,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		- {{query (page "Dynamic Variables")}}
 - # Search for anywhere a [[Property]] has a specific value #[[unfinished]]
 	- By using [[Properties]] on our pages and blocks, we can make our notes searchable based on [[Metadata]]
-- # Search for blocks in a specific timeperiod in the [[Journal]]
+- # Search for blocks in a specific timeperiod (#Journal only!)
   collapsed:: true
 	- [[Logseq]] only allows to filter blocks based on #[[Date And Time]] in the [[Journal]] for [[Simple Queries]]
 	- These are the available symbols you can use with the filter `BETWEEN`
@@ -43,6 +43,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	  collapsed:: true
 		- {{query (between -7d +7d)}}
 - # Page-property #[[unfinished]]
+	- {{query (property alias "Property")}}
 - # Search for pages that have specific tags
   collapsed:: true
 	- `{{query (Page-tags Clojure)}}`
