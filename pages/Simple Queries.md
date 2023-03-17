@@ -23,7 +23,9 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	  collapsed:: true
 		- {{query (page "Dynamic Variables")}}
 - # Search for anywhere a [[Property]] has a specific value #[[unfinished]]
+	- By using [[Properties]] on our pages and blocks, we can make our notes searchable based on [[Metadata]]
 - # Search for blocks in a specific timeperiod in the [[Journal]]
+  collapsed:: true
 	- [[Logseq]] only allows to filter blocks based on #[[Date And Time]] in the [[Journal]] for [[Simple Queries]]
 	- These are the available symbols you can use with the filter `BETWEEN`
 		- 1. ` today - yesterday - tomorrow - now`
