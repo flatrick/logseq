@@ -26,6 +26,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	- By using [[Properties]] on our pages and blocks, we can make our notes searchable based on [[Metadata]]
 	- {{query (property alias "Property")}}
 - # Search for **blocks** in a specific timeperiod (#Journal only!)
+  collapsed:: true
 	- [[Logseq]] only allows to filter blocks based on #[[Date And Time]] in the [[Journal]] for [[Simple Queries]]
 	- These are the available symbols you can use with the filter `BETWEEN`
 		- 1. ` today - yesterday - tomorrow - now`
@@ -88,6 +89,15 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		- `{{query (and "Query" (not "Logseq"))}}`
 		  collapsed:: true
 			- {{query (and "Query" (not "Logseq"))}}
+- # SORTING
+	- #+BEGIN_QUOTE
+	  Format: (sort-by key order) or (sort-by key)
+	  
+	  key: created-at | updated-at
+	  order: desc or asc, omit means desc.
+	  
+	  (and (task now later) (sort-by created-at desc))
+	  #+END_QUOTE
 - # Combining all options above #[[unfinished]]
 	- `{{query (and [[Dynamic Variables]] <% current page %> )}}`
 	  collapsed:: true
