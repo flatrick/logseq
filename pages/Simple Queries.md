@@ -1,7 +1,6 @@
 tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 
 - # Search for a specific word
-  collapsed:: true
 	- `{{query Logseq}}`
 	  collapsed:: true
 		- {{query "Logseq"}}
@@ -9,24 +8,23 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 - # Search for a phrase using a "quoted string"
   collapsed:: true
 	- When we put quotation-marks around a string, we can search for a specific order of words
-		- `{{query "order of words"}}`
-		  collapsed:: true
-			- {{query "order of words"}}
-			  query-table:: false
+	- `{{query "order of words"}}`
+		- {{query "order of words"}}
+		  query-table:: false
 - # Search for where a specific `[[link]]` is used
   collapsed:: true
 	- `{{query [[Query]]}}`
 		- {{query [[Query]]}}
-- # Search for a page by name
+- # Search for a **page** by name
   collapsed:: true
 	- `{{query (page "Dynamic Variables")}}`
 	  collapsed:: true
 		- {{query (page "Dynamic Variables")}}
-- # Search for anywhere a [[Property]] has a specific value
+- # Search for **blocks** and **pages** where a [[Property]] has a specific value
   collapsed:: true
 	- By using [[Properties]] on our pages and blocks, we can make our notes searchable based on [[Metadata]]
 	- {{query (property alias "Property")}}
-- # Search for blocks in a specific timeperiod (#Journal only!)
+- # Search for **blocks** in a specific timeperiod (#Journal only!)
   collapsed:: true
 	- [[Logseq]] only allows to filter blocks based on #[[Date And Time]] in the [[Journal]] for [[Simple Queries]]
 	- These are the available symbols you can use with the filter `BETWEEN`
@@ -44,11 +42,13 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	- `{{query (between -7d +7d)}}`
 	  collapsed:: true
 		- {{query (between -7d +7d)}}
-- # Search for **pages** that has a Page-property
+- # Search for **pages** that has any **Page-property** set
+  collapsed:: true
 	- {{query (page-property alias)}}
-# Search for **pages** that has a Page-property set to a specific value
+- # Search for **pages** where a **Page-property** has a specific value
+  collapsed:: true
 	- {{query (page-property alias "EDN")}}
-- # Search for pages that have specific tags
+- # Search for **pages** that have a specific tag
   collapsed:: true
 	- `{{query (Page-tags Clojure)}}`
 		- {{query (Page-tags Clojure)}}
@@ -56,12 +56,17 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
   collapsed:: true
 	- {{query (all-page-tags)}}
 - # Search for #Task based on what state they are in
+  collapsed:: true
 	- {{query (task now doing in-progress)}}
 	  query-table:: false
 	- {{query (task later todo)}}
 	- {{query (task wait waiting)}}
 	- {{query (task done canceled)}}
-- # Priority
+- # Search for **blocks** that has a [[Priority]] set
+	- {{query (priority a)}}
+	- {{query (priority b)}}
+	- {{query (priority c)}}
+	- {{query (priority a b c)}}
 - # Search using [[Dynamic Variables]]
 	- `{{query (page <% current page %>) }}`
 	  collapsed:: true
