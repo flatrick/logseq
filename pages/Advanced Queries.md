@@ -154,7 +154,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 	- ## Combining [[Simple Queries]] and [[Advanced Queries]]
 		- ```clojure
 		  {:title "🔨 All todos with current pages tag"
-		   :query (and (todo TODO DOING) [[Momolingo]])
+		   :query (and (task TODO DOING) <% current page %>)
 		   :result-transform (fn [result]
 		                       (sort-by (fn [h]
 		                                  (get h :block/priority "Z")) result))
