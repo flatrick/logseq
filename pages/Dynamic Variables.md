@@ -7,3 +7,4 @@ tags:: #[[Date And Time]]
 - `<% current page %>`
 - # [Natural Language Date](https://github.com/wanasit/chrono)
 	- `<% Last Friday  %>`
+-

@@ -1,7 +1,9 @@
 tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 
 - # Search for **pages** and/or **blocks**
+  collapsed:: true
 	- ## Search for a specific word
+	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query Logseq}}
@@ -18,10 +20,13 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 			- {{query "order of words"}}
 			  query-table:: false
 	- ## Search for where a [[Property]] has a specific value
+	  collapsed:: true
 		- By using [[Properties]] on our pages and blocks, we can make our notes searchable based on [[Metadata]]
-		- ```clojure
+		- collapsed:: true
+		  ```clojure
 		  {{query (property alias "Property") }}
 		  ```
+			- {{query (property alias "Property") }}
 - # Search for **pages**
   collapsed:: true
 	- ## Search for a **page** by name
@@ -33,14 +38,18 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 			- {{query (page "Dynamic Variables")}}
 	- ## Search for **pages** that has any **Page-property** set
 	  collapsed:: true
-		- ```clojure
+		- collapsed:: true
+		  ```clojure
 		  {{query (page-property alias) }}
 		  ```
+			- {{query (page-property alias) }}
 	- ## Search for **pages** where a **Page-property** has a specific value
 	  collapsed:: true
-		- ```clojure
+		- collapsed:: true
+		  ```clojure
 		  {{query (page-property alias "EDN") }}
 		  ```
+			- {{query (page-property alias "EDN") }}
 	- ## Search for **pages** that have a specific tag
 	  collapsed:: true
 		- collapsed:: true
@@ -68,6 +77,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	  collapsed:: true
 		- [[Logseq]] only allows to filter blocks based on #[[Date And Time]] in the [[Journal]] for [[Simple Queries]]
 		- These are the available symbols you can use with the filter `BETWEEN`
+		  collapsed:: true
 			- 1. ` today - yesterday - tomorrow - now`
 			  2. `+` or `-` followed by a digit/number and then the type `y - m - w - d - h - min`
 				- **y** = **y**ear(s)
@@ -76,46 +86,64 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 				  **d** = **d**ay(s)
 				  **h** = **h**our(s)
 				  **min** = **min**ute(s)
-					- So we can say 5 days into the future by typing: `+5d`
-					- Or 5 days into the past: `-5d`
-					- 1 hour into the past can be written as `-1h` or `-60min`
+					- So we can say *5 days into the future* by typing: `+5d`
+					- Or *5 days into the past*: `-5d`
+					- And *1 hour into the past* can be written as `-1h` or `-60min`
 		- collapsed:: true
 		  ```clojure
 		  {{query (between -7d +7d) }}
 		  ```clojure
 			- {{query (between -7d +7d)}}
-		- ```clojure
+		- collapsed:: true
+		  ```clojure
 		  {{query (between today +7d) }}
 		  ```
+			- {{query (between today +7d) }}
 	- ## Search for **blocks** that has a [[Priority]] set
 	  collapsed:: true
-		- ```clojure
+		- collapsed:: true
+		  ```clojure
 		   {{query (priority a) }}
 		  ```
-		- ```clojure
+			- {{query (priority a) }}
+		- collapsed:: true
+		  ```clojure
 		  {{query (priority b) }}
 		  ```
-		- ```clojure
+			- {{query (priority b) }}
+		- collapsed:: true
+		  ```clojure
 		  {{query (priority c) }}
 		  ```
-		- ```clojure
+			- {{query (priority c) }}
+		- collapsed:: true
+		  ```clojure
 		  {{query (priority a b c) }}
 		  ```
+			- {{query (priority a b c) }}
 	- ## Search for #Tasks based on what state they are in
 	  collapsed:: true
 		- query-table:: false
+		  collapsed:: true
 		  ```clojure
 		  {{query (task now doing in-progress) }}
 		  ```
-		- ```clojure
+			- {{query (task now doing in-progress) }}
+		- collapsed:: true
+		  ```clojure
 		  {{query (task later todo) }}
 		  ```
-		- ```clojure
+			- {{query (task later todo) }}
+		- collapsed:: true
+		  ```clojure
 		  {{query (task wait waiting) }}
 		  ```
-		- ```clojure
+			- {{query (task wait waiting) }}
+		- collapsed:: true
+		  ```clojure
 		  {{query (task done canceled) }}
 		  ```
+			- {{query (task done canceled) }}
 - # Search for all **tags** used as a **page-tag**
   collapsed:: true
 	- collapsed:: true
@@ -144,7 +172,6 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  ```
 			- {{query (and "Query" (not "Logseq"))}}
 - # SORTING
-  collapsed:: true
 	- #+BEGIN_QUOTE
 	  Format: (sort-by key order) or (sort-by key)
 	  
@@ -156,10 +183,8 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	  {{query (and (task now later) (sort-by created-at desc) ) }}
 	  ```
 		- {{query (and (task now later) (sort-by created-at desc))}}
-- # Combining all options above #[[unfinished]]
-	- collapsed:: true
-	  ```clojure
-	  {{query (and [[Dynamic Variables]] <% current page %> ) }}
+- # Combining options from above #[[unfinished]]
+	- ```clojure
+	  {{query (and [[Dynamic Variables]] "today" ) }}
 	  ```
-		- {{query (and [[Dynamic Variables]] <% current page %> )}}
--
+		- {{query (and [[Dynamic Variables]] "today" )}}
