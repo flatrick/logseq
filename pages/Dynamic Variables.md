@@ -1,3 +1,5 @@
+tags:: #[[Date And Time]]
+
 - https://docs.logseq.com/#/page/templates
 - `<% today %>`
 - `<% yesterday %>`

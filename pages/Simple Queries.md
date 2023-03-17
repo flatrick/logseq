@@ -18,12 +18,33 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	- `{{query [[Query]]}}`
 		- {{query [[Query]]}}
 - # Search for a page by name
+  collapsed:: true
 	- `{{query (page "Dynamic Variables")}}`
 	  collapsed:: true
 		- {{query (page "Dynamic Variables")}}
-- # Search for anywhere a [[Property]] has a specific value
-- # Page-property
-- # Page-tags
+- # Search for anywhere a [[Property]] has a specific value #[[unfinished]]
+- # Search for blocks in the [[Journal]] based on #[[Date And Time]]
+	- [[Logseq]] only allows to filter blocks based on #[[Date And Time]] in the [[Journal]]
+	- These are the available symbols you can use with the filter `BETWEEN`
+		- 1. ` today - yesterday - tomorrow - now`
+		  2. `+ or -` followed by a digit/number, then the type `y - m - w - d - h - min`
+			- **y** = **y**ear(s)
+			  **m** = **m**onth(s)
+			  **w** = **w**eek(s)
+			  **d** = **d**ay(s)
+			  **h** = **h**our(s)
+			  **min** = **min**ute(s)
+			- So we can say 5 days into the future by typing: `+5d`
+			- Or 5 days into the past: `-5d`
+			- 1 hour into the past can be written as `-1h` or `-60min`
+	- `{{query (between -7d +7d)}}`
+	  collapsed:: true
+		- {{query (between -7d +7d)}}
+- # Page-property #[[unfinished]]
+- # Search for pages that have specific tags
+  collapsed:: true
+	- `{{query (Page-tags Clojure)}}`
+		- {{query (Page-tags Clojure)}}
 - # All-page-tags
   collapsed:: true
 	- {{query (all-page-tags)}}
@@ -33,8 +54,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	- `{{query (page <% current page %>) }}`
 	  collapsed:: true
 		- {{query (page <% current page %>) }}
-- # Search using multiple matching criterias
-  collapsed:: true
+- # Search using multiple criterias
 	- ## AND
 		- `{{query (and "Query" "Logseq")}}`
 		  collapsed:: true
@@ -47,11 +67,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		- `{{query (and "Query" (not "Logseq"))}}`
 		  collapsed:: true
 			- {{query (and "Query" (not "Logseq"))}}
-	- ## BETWEEN
-		- `{{query (between -7d +7d)}}`
-		  collapsed:: true
-			- {{query (between -7d +7d)}}
-- # Combining all options above [[unfinished]]
+- # Combining all options above #[[unfinished]]
 	- `{{query (and [[Dynamic Variables]] <% current page %> )}}`
 	  collapsed:: true
 		- {{query (and [[Dynamic Variables]] <% current page %> )}}
