@@ -5,14 +5,17 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	  collapsed:: true
 		- {{query "Logseq"}}
 		  query-table:: false
-- # Search for a phrase using a quoted string
+- # Search for a phrase using a "quoted string"
 	- When we put quotation-marks around a string, we can search for a specific order of words
-		- `{{query "Query"}}`
+		- `{{query "order of words"}}`
 		  collapsed:: true
-			- {{query "Query"}}
+			- {{query "order of words"}}
 			  query-table:: false
-- # Search using dynamic variables
-	- `{{query (page <% current page %>) }}` #[[Dynamic Variables]]
+- # Search for where a specific `[[link]]` is used
+	- `{{query [[Query]]}}`
+		- {{query [[Query]]}}
+- # Search using [[Dynamic Variables]]
+	- `{{query (page <% current page %>) }}`
 	  collapsed:: true
 		- {{query (page <% current page %>) }}
 - # Search using multiple matching criterias
@@ -32,6 +35,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		- `{{query (between -7d +7d)}}`
 		  collapsed:: true
 			- {{query (between -7d +7d)}}
-- `{{query (and [[Dynamic Variables]] <% current page %> )}}` #[[Dynamic Variables]]
-  collapsed:: true
-	- {{query (and [[Dynamic Variables]] <% current page %> )}}
+- # Combining all options above [[unfinished]]
+	- `{{query (and [[Dynamic Variables]] <% current page %> )}}`
+	  collapsed:: true
+		- {{query (and [[Dynamic Variables]] <% current page %> )}}
