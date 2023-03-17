@@ -11,17 +11,19 @@
 		  DONE I'm done working on this
 		  CANCELED I won't be finishing this task
 		  ```
-	- You can turn a block into a task by using [[Keyboard Shortcuts]] _(under **Block editing general** called **Rotate the TODO state of the current item** will show you which combo is configured in your installation)_
+	- They can be created using [[Slash-commands]]
+	- You can turn a block into a task by using [[Keyboard Shortcuts]]
 	  collapsed:: true
+		- _under **Block editing general** called **Rotate the TODO state of the current item** will show you which combo is configured in your installation_
 		- By using this toggle, you can switch between the most common states
+		  collapsed:: true
 			- `IN-PROGRESS`, `WAIT`, `WAITING` or `CANCELED` are not in the list of states the toggle will switch between
 			  id:: 641494d2-5877-4d3a-92e1-419585706623
 			  :LOGBOOK:
 			  CLOCK: [2023-03-17 Fri 17:27:12]--[2023-03-17 Fri 17:27:13] =>  00:00:01
 			  :END:
-	- They can be created using [[Slash-commands]]
-- `IN-PROGRESS` and `WAIT` are not available through the [[Slash-commands]] either and has to be typed out by hand
-	- I'm guessing these are deprecated and/or forgotten to be removed
+	- `IN-PROGRESS` and `WAIT` are not available through the [[Slash-commands]] nor through the toggle and has to be typed out by hand
+		- These are most likely deprecated and/or forgotten to be removed
 - # Examples
 	- NOW I am working on this
 	  :LOGBOOK:
