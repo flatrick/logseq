@@ -23,6 +23,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	  collapsed:: true
 		- {{query (page "Dynamic Variables")}}
 - # Search for anywhere a [[Property]] has a specific value #[[unfinished]]
+  collapsed:: true
 	- By using [[Properties]] on our pages and blocks, we can make our notes searchable based on [[Metadata]]
 	- {{query (property alias "Property")}}
 - # Search for blocks in a specific timeperiod (#Journal only!)
@@ -52,38 +53,8 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 - # All-page-tags
   collapsed:: true
 	- {{query (all-page-tags)}}
-- # Search for Tasks based on what state they are in
-	- ```
-	  NOW I am working on this
-	  DOING And I am also working on this
-	  IN-PROGRESS This is also being worked on
-	  LATER I should work on this
-	  TODO I should also work on this
-	  WAIT I'm waiting on something to continue working on this
-	  WAITING I'm also waiting on something to continue working on this
-	  DONE I'm done working on this
-	  CANCELED I won't be finishing this task
-	  ```
-		- These lines will be decorated by [[Logseq]] and be searchable.
-		- Examples
-		  collapsed:: true
-			- NOW I am working on this
-			  :LOGBOOK:
-			  CLOCK: [2023-03-17 Fri 17:04:02]
-			  CLOCK: [2023-03-17 Fri 17:04:05]
-			  :END:
-			- DOING And I am also working on this
-			  :LOGBOOK:
-			  CLOCK: [2023-03-17 Fri 17:04:41]
-			  CLOCK: [2023-03-17 Fri 17:04:44]
-			  :END:
-			- IN-PROGRESS This is also being worked on
-			- LATER I should work on this
-			- TODO I should also work on this
-			- WAIT I'm waiting on something to continue working on this
-			- WAITING I'm also waiting on something to continue working on this
-			- DONE I'm done working on this
-			- CANCELED I won't be finishing this task
+- # Search for #Task based on what state they are in
+	- [[Task]]s is how [[Logseq]] helps you keep track of what to do
 	- {{query (task now doing in-progress)}}
 	  query-table:: false
 	- {{query (task later todo)}}
