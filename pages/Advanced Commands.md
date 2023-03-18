@@ -3,7 +3,13 @@ tags:: [[Commands]]
 - https://docs.logseq.com/#/page/advanced%20commands
 -
 - # Quotes
+	- #+BEGIN_QUOTE
+	  This is a quote.
+	  #+END_QUOTE
 - # Source code
+	- ```python 
+	  string = "This is a some programming-code that will be syntax highlighted"
+	  ```
 - # [[Advanced Queries]]
 - # Admonitions
 	- #+BEGIN_NOTE
@@ -35,7 +41,7 @@ tags:: [[Commands]]
 	  #+END_EXAMPLE
 - # Verses
 	- #+BEGIN_VERSE
-	  this is a verse
+	  This is a verse
 	  it allows us to write longer pieces of texts
 	  
 	  and using `ENTER` while staying in the same block.
@@ -43,6 +49,7 @@ tags:: [[Commands]]
 	  You could use `CTRL` + `ENTER` to make new lines within the same block, but for longer texts, creating a **verse**-block would reduce the friction of just writing your text.
 	  
 	  One difference from using **EXAMPLE** is that the text will be shown as a non-special block.
+	  
 	  Another difference is that formatting codes (such as *italic* or **bold**) will be interpreted.
 	  #+END_VERSE
 - # Centered text
