@@ -1,7 +1,9 @@
 tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 
 - # Search for **pages** and/or **blocks**
+  collapsed:: true
 	- ## Search for a specific word
+	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query Logseq}}
@@ -9,6 +11,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 			- {{query Logseq}}
 			  query-table:: false
 	- ## Search for a phrase using a "quoted string"
+	  collapsed:: true
 		- When we put quotation-marks around a string, we can search for a specific order of words
 		- collapsed:: true
 		  ```clojure
@@ -24,13 +27,16 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  ```
 			- {{query (property alias "Property") }}
 - # Search for **pages**
+  collapsed:: true
 	- ## Search for a **page** by name
+	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query (page "Dynamic Variables") }}
 		  ```
 			- {{query (page "Dynamic Variables")}}
 	- ## Search for **pages** that has a specific **Page-property** set
+	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query (page-property alias) }}
@@ -41,19 +47,24 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  {{query (page-property alias "EDN") }}
 		  ```
 			- {{query (page-property alias "EDN") }}
+	- ## Search for **pages** in a specific [[Namespace]]
+		- {{query (namespace test)}}
 	- ## Search for **pages** that have a specific tag
+	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query (Page-tags Clojure) }}
 		  ```
 			- {{query (Page-tags Clojure)}}
-	- ## Search for a **page** using [[Dynamic Variables]]
-		- collapsed:: true
-		  ```clojure
-		  {{query (page <% current page %>) }}
-		  ```
-			- {{query (page <% current page %>) }}
+		- ## Search for a **page** using [[Dynamic Variables]]
+		  collapsed:: true
+			- collapsed:: true
+			  ```clojure
+			  {{query (page <% current page %>) }}
+			  ```
+				- {{query (page <% current page %>) }}
 - # Search for **blocks**
+  collapsed:: true
 	- ## Search for **blocks** or **properties** contain a specific `[[link]]`
 		- collapsed:: true
 		  ```clojure
@@ -128,12 +139,14 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  ```
 			- {{query (task done canceled) }}
 - # Search for all **tags** used as a **page-tag**
+  collapsed:: true
 	- collapsed:: true
 	  ```clojure
 	  {{query (all-page-tags) }}
 	  ```
 		- {{query (all-page-tags)}}
 - # Search using multiple criterias
+  collapsed:: true
 	- ## AND
 		- collapsed:: true
 		  ```clojure
@@ -153,6 +166,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  ```
 			- {{query (and "Query" (not "Logseq"))}}
 - # SORTING
+  collapsed:: true
 	- #+BEGIN_QUOTE
 	  Format: 
 	  (sort-by property-name order) or (sort-by property-name)
@@ -174,3 +188,20 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	  {{query (and [[Dynamic Variables]] "today" ) }}
 	  ```
 		- {{query (and [[Dynamic Variables]] "today" )}}
+- # #unfinished
+	- https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/rules.cljc
+	- collapsed:: true
+	  ```clojure
+	  {{query (block-content "query") }}
+	  ```
+		- {{query (block-content "query")}}
+	- collapsed:: true
+	  ```clojure
+	  {{query (page-ref) }}
+	  ```
+		- {{query (page-ref) }}
+	- collapsed:: true
+	  ```clojure
+	  {{query (has-page-property) }}
+	  ```
+		- {{query (has-page-property) }}
