@@ -1,7 +1,8 @@
 tags:: [[Commands]]
 
 - https://docs.logseq.com/#/page/advanced%20commands
--
+- Accessed by writing `<`
+	- A list of all available **Advanced Commands** will be shown in a dropdown list
 - # Quotes
 	- #+BEGIN_QUOTE
 	  This is a quote.
