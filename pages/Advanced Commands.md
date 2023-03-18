@@ -43,6 +43,7 @@ tags:: [[Commands]]
 	  You could use `CTRL` + `ENTER` to make new lines within the same block, but for longer texts, creating a **verse**-block would reduce the friction of just writing your text.
 	  
 	  One difference from using **EXAMPLE** is that the text will be shown as a non-special block.
+	  Another difference is that formatting codes (such as *italic* or **bold**) will be interpreted.
 	  #+END_VERSE
 - # Centered text
 	- #+BEGIN_CENTER
