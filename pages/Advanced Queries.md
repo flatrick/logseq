@@ -70,7 +70,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 					- when used outside of [[Logseq]], these variables can be supplied when calling this query
 					- if more than one dynamic value is needed, all of these must be defined in the `:in`-clause
 						- and in the case of [[Logseq]], their values must be added to `:input [ ]` clause further down
-				- ##### collections #unfinished
+				- ##### **collections**
 					- If you want to search for multiple entities with different values, you can use three dots after the variable name (`[?var ...]`)
 						- ```clojure
 						  [:find ?title
