@@ -193,15 +193,31 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	- collapsed:: true
 	  ```clojure
 	  {{query (block-content "query") }}
+	  
+	  :block-content
+	  '[(block-content ?b ?query)
+	    [?b :block/content ?content]
+	    [(clojure.string/includes? ?content ?query)]]
 	  ```
 		- {{query (block-content "query")}}
 	- collapsed:: true
 	  ```clojure
 	  {{query (page-ref) }}
+	  
+	  :page-ref
+	  '[(page-ref ?b ?page-name)
+	    [?b :block/path-refs ?br]
+	    [?br :block/name ?page-name]]})
 	  ```
 		- {{query (page-ref) }}
 	- collapsed:: true
 	  ```clojure
 	  {{query (has-page-property) }}
+	  
+	  :has-page-property
+	  '[(has-page-property ?p ?key)
+	    [?p :block/name]
+	    [?p :block/properties ?prop]
+	    [(get ?prop ?key)]]
 	  ```
 		- {{query (has-page-property) }}
