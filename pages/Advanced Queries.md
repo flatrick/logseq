@@ -52,7 +52,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 				- `(pull ?VARIABLE [*])`
 					- this would return a list of all entities, showing all **values** for each **entity** thanks to the wildcard *(the asterisk)*
 			- #### :in _(optional)_
-				- **:in** can be omitted in [[Logseq]] when you aren't using ((640e3bfb-0c22-493b-8222-0acbfe19ccb9))
+				- **:in** can be omitted in [[Logseq]] when you aren't using ((640e3bfb-0c22-493b-8222-0acbfe19ccb9)) variables
 					- since there is only one database, it will know which one to use
 					- https://docs.datomic.com/on-prem/query/query.html#implicit-data-source
 				- when used, you first need to define which database to use by writing `$`
@@ -130,7 +130,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 					  ```
 			- #### :with
 				- https://docs.datomic.com/on-prem/query/query.html#with
-	- ## :inputs
+	- ## :input
 	  id:: 640e3bfb-0c22-493b-8222-0acbfe19ccb9
 		- ```clojure
 		  [:find ?title
