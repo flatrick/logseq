@@ -1,9 +1,7 @@
 tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 
 - # Search for **pages** and/or **blocks**
-  collapsed:: true
 	- ## Search for a specific word
-	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query Logseq}}
@@ -11,7 +9,6 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 			- {{query Logseq}}
 			  query-table:: false
 	- ## Search for a phrase using a "quoted string"
-	  collapsed:: true
 		- When we put quotation-marks around a string, we can search for a specific order of words
 		- collapsed:: true
 		  ```clojure
@@ -20,7 +17,6 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 			- {{query "order of words"}}
 			  query-table:: false
 	- ## Search for where a [[Property]] has a specific value
-	  collapsed:: true
 		- By using [[Properties]] on our pages and blocks, we can make our notes searchable based on [[Metadata]]
 		- collapsed:: true
 		  ```clojure
@@ -28,56 +24,45 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  ```
 			- {{query (property alias "Property") }}
 - # Search for **pages**
-  collapsed:: true
 	- ## Search for a **page** by name
-	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query (page "Dynamic Variables") }}
 		  ```
 			- {{query (page "Dynamic Variables")}}
-	- ## Search for **pages** that has any **Page-property** set
-	  collapsed:: true
+	- ## Search for **pages** that has a specific **Page-property** set
 		- collapsed:: true
 		  ```clojure
 		  {{query (page-property alias) }}
 		  ```
-			- {{query (page-property alias) }}
+			- {{query (page-property alias ) }}
 	- ## Search for **pages** where a **Page-property** has a specific value
-	  collapsed:: true
-		- collapsed:: true
-		  ```clojure
+		- ```clojure
 		  {{query (page-property alias "EDN") }}
 		  ```
 			- {{query (page-property alias "EDN") }}
 	- ## Search for **pages** that have a specific tag
-	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query (Page-tags Clojure) }}
 		  ```
 			- {{query (Page-tags Clojure)}}
 	- ## Search for a **page** using [[Dynamic Variables]]
-	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query (page <% current page %>) }}
 		  ```
 			- {{query (page <% current page %>) }}
 - # Search for **blocks**
-  collapsed:: true
 	- ## Search for **blocks** or **properties** contain a specific `[[link]]`
-	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		  {{query [[Query]] }}
 		  ```
 			- {{query [[Query]]}}
 	- ## Search for **blocks** in a specific timeperiod (#Journal only!)
-	  collapsed:: true
 		- [[Logseq]] only allows to filter blocks based on #[[Date And Time]] in the [[Journal]] for [[Simple Queries]]
 		- These are the available symbols you can use with the filter `BETWEEN`
-		  collapsed:: true
 			- 1. ` today - yesterday - tomorrow - now`
 			  2. `+` or `-` followed by a digit/number and then the type `y - m - w - d - h - min`
 				- **y** = **y**ear(s)
@@ -100,7 +85,6 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  ```
 			- {{query (between today +7d) }}
 	- ## Search for **blocks** that has a [[Priority]] set
-	  collapsed:: true
 		- collapsed:: true
 		  ```clojure
 		   {{query (priority a) }}
@@ -122,7 +106,6 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  ```
 			- {{query (priority a b c) }}
 	- ## Search for #Tasks based on what state they are in
-	  collapsed:: true
 		- query-table:: false
 		  collapsed:: true
 		  ```clojure
@@ -145,14 +128,12 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		  ```
 			- {{query (task done canceled) }}
 - # Search for all **tags** used as a **page-tag**
-  collapsed:: true
 	- collapsed:: true
 	  ```clojure
 	  {{query (all-page-tags) }}
 	  ```
 		- {{query (all-page-tags)}}
 - # Search using multiple criterias
-  collapsed:: true
 	- ## AND
 		- collapsed:: true
 		  ```clojure
