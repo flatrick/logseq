@@ -183,6 +183,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 	  ```
 		- {{query (and (task now later) (sort-by created-at desc))}}
 - # Combining options from above #[[unfinished]]
+  collapsed:: true
 	- collapsed:: true
 	  ```clojure
 	  {{query (and [[Dynamic Variables]] "today" ) }}
