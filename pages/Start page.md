@@ -42,6 +42,7 @@
 		- Meaning that any link you make from **Page A** to *Page B*
 			- **Page B** will be aware of and create a link back to *Page A*
 				- Which leads us to the next topic: [[Graph View]]
+		- **Links to _blocks_ are also _bi-directional_**
 - **Logseq** allows you to add [[Metadata]] about any page and/or block
 - [[Commands]]
 - [[Macros]]
