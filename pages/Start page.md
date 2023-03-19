@@ -1,9 +1,11 @@
 - [[Outliner]]
 	- **Branch**: a block with blocks underneath it
 		- **Leaf**: a block with no blocks underneath it.
-	- **Parent & Child** relations describe the hierarchy of notes
+	- **Parent & Child** relations describe the hierarchy of blocks
 		- A **Parent** can have *multiple* **Children**
 		- A **Child** has *only one* **Parent**
+		- A block can be a **Parent** and a **Child** at the same time
+			- The **block** above this is a **parent** to this **block**, but it is also a **child** to the **block** one level above it
 - **Blocks** is the smallest *unit of information* that you can work with in **Logseq**
 	- A **Page** corresponds to a single file on disk where we can store our **Blocks** inside of
 		- **Logseqs** has multiple abilites to collect data from other different pages and blocks
@@ -15,3 +17,7 @@
 					  id:: 64172cb8-6313-40a9-9d89-c1ffb78da2be
 					- make a link/shortcut to that block that can be used outside **Logseq** to quickly open **Logseq** and show the block
 				- You can even embed entire pages into your page
+- [[Commands]]
+- [[Graph View]]
+- [[Macros]]
+- [[Customize Logseq]]
