@@ -30,7 +30,7 @@
 		  
 		  #+BEGIN_EXAMPLE
 		  This will not create the #[[tag]]s that you are expecting.
-		  But this link to [[tag]]s will.
+		  But this link to [[tag]]s will behave a expected.
 		  #+END_EXAMPLE 
 		  #+END_CAUTION
 - **Logseq** allows you to add [[Metadata]] about any page and/or block
