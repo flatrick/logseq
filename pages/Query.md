@@ -1,4 +1,5 @@
 tags:: [[Database]]
+alias:: [[Queries]]
 
 - [[Logseq]] has two different syntaxes for querying the database with your notes:
 	- [[Simple Queries]]
