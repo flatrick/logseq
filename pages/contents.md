@@ -1,6 +1,6 @@
 - [[Logseq]]
 	- [[Commands]]
-		- [[Advanced Queries]]
+		- [[Advanced Commands]]
 	- [[Simple Queries]]
 		- [[Advanced Queries]]
 	- [[Built-in Properties]]
