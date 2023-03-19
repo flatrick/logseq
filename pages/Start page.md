@@ -21,7 +21,7 @@
 	- Because of this, the ability to link from one note to another is a very central concept of the application
 	- You can either use `[[Links]]` which is the primary way to connect notes
 	- And you can also give blocks and/or pages  `#tags` to connect notes
-		- It is mostly a question of aesthetics
+		- It is mostly a question of aesthetics as a **link** will look differently than a **tag**
 			- But it does affect how you reference these connections in [[Queries]]
 		- If a tag contains spaces (or special characters), you can `#[[Write tags like this]]`
 		- #+BEGIN_CAUTION
