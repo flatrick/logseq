@@ -17,6 +17,23 @@
 					  id:: 64172cb8-6313-40a9-9d89-c1ffb78da2be
 					- make a link/shortcut to that block that can be used outside **Logseq** to quickly open **Logseq** and show the block
 				- You can even embed entire pages into your page
+- **Logseq** is built around the concept of [[Networked thinking]]
+	- Because of this, the ability to link from one note to another is a very central concept of the application
+	- You can either use `[[Links]]` which is the primary way to connect notes
+	- And you can also give blocks and/or pages  `#tags` to connect notes
+		- It is mostly a question of aesthetics
+			- But it does affect how you reference these connections in [[Queries]]
+		- If a tag contains spaces (or special characters), you can `#[[Write tags like this]]`
+		- #+BEGIN_CAUTION
+		  When using tags with the second syntax (`#[[Write tags like this]]`), there is a tiny bug you should know of:
+		  
+		  
+		  #+BEGIN_EXAMPLE
+		  This will not create the #[[tag]]s that you are expecting.
+		  But this link to [[tag]]s will.
+		  #+END_EXAMPLE 
+		  #+END_CAUTION
+- **Logseq** allows you to add [[Metadata]] about any page and/or block
 - [[Commands]]
 - [[Graph View]]
 - [[Macros]]
