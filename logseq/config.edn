@@ -32,7 +32,7 @@
  ;; :ui/show-brackets? true
 
  ;; Enable showing the body of blocks when referencing them.
- :ui/show-full-blocks? false
+ :ui/show-full-blocks? true
 
  ;; Enable Block timestamp
  :feature/enable-block-timestamps? true
@@ -345,6 +345,8 @@
  :feature/enable-flashcards? false
  :graph/settings {:journal? true, :builtin-pages? true}
  :ui/show-brackets? false
+ 
+ :default-home {:page "Start page", :sidebar "Contents"}
 
  ;; specify the format of the filename for journal files
  ;; :journal/file-name-format "yyyy_MM_dd"

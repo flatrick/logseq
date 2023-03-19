@@ -162,6 +162,7 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 	  :rules [...]}
 	  ```
 	- ## Combining [[Simple Queries]] and [[Advanced Queries]]
+	  id:: 6414d3e8-cf73-41de-a7b7-1c2d178cbfb0
 		- ```clojure
 		  {:title "🔨 All todos with current pages tag"
 		   :query (and (task TODO DOING) <% current page %>)
