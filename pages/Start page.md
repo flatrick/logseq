@@ -24,15 +24,15 @@
 		- It is mostly a question of aesthetics as a **link** will look differently than a **tag**
 			- But it does affect how you reference these connections in [[Queries]]
 		- If a tag contains spaces (or special characters), you can `#[[Write tags like this]]`
-		- #+BEGIN_CAUTION
-		  When using tags with the second syntax (`#[[Write tags like this]]`), there is a tiny bug you should know of:
-		  
-		  
-		  #+BEGIN_EXAMPLE
-		  This will not create the #[[tag]]s that you are expecting.
-		  But this link to [[tag]]s will behave a expected.
-		  #+END_EXAMPLE 
-		  #+END_CAUTION
+			- #+BEGIN_CAUTION
+			  When using tags with the second syntax (`#[[Write tags like this]]`), there is a tiny bug you should know of:
+			  
+			  
+			  #+BEGIN_EXAMPLE
+			  This will not create the #[[tag]]s that you are expecting.
+			  But this link to [[tag]]s will behave as expected.
+			  #+END_EXAMPLE 
+			  #+END_CAUTION
 - **Logseq** allows you to add [[Metadata]] about any page and/or block
 - [[Commands]]
 - [[Graph View]]
