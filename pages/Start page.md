@@ -40,8 +40,8 @@
 	- A very important detail about **links** _(and **tags**)_ in **Logseq** is that they are all **bi-directional**
 		- Meaning that any link you make from **Page A** to *Page B*
 			- **Page B** will be aware of and create a link back to *Page A*
+				- Which leads us to the next topic: [[Graph View]]
 - **Logseq** allows you to add [[Metadata]] about any page and/or block
 - [[Commands]]
-- [[Graph View]]
 - [[Macros]]
 - [[Customize Logseq]]
