@@ -1,9 +1,18 @@
 - # :block
-	- ## :block/name
-	- ## :block/refs
-		- a block that is a reference to another block or page
+	- ## :block/type
+		- a string type of the current block
+			- `whiteboard`
+			- `macros`
+	- ## :block/uuid
+		- a [[Universally Unique IDentifier]]
 	- ## :block/parent
 		- the parent-block that contains this child-block
-	- ## :block/marker
+	-
+	- ## :block/name #unfinished
+		- ## :block/
+		- ?
+	- ## :block/refs
+		- a block that is a reference to another block or page
+	- ## :block/marker #unfinished
 		- used for [[Tasks]] (and other things?)
 	-
