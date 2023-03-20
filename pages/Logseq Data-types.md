@@ -36,7 +36,19 @@
 	- ## :block/properties-text-values
 		- original property value`s content
 	- ## :block/pre-block?
-		- b
+		- boolean to indicate if this is the first block on a page (for properties?)
+	- ## :block/scheduled #unfinished
+		- scheduled day?
+	- ## :block/deadline #unfinished
+		- deadline day?
+	- ## :block/repeated? #unfinished
+		- whether blocks is a repeated block (usually a task)
+	- ## :block/created-at
+	- ## :block/updated-at
 	- ## :block/name #unfinished
-		- ?
-	-
+		- page's name, lowercase
+	- ## :block/original-name
+		- page's original name
+	- ## :block/journal?
+		- whether page is a journal
+	- ## :block/jour
