@@ -7,12 +7,23 @@
 		- a [[Universally Unique IDentifier]]
 	- ## :block/parent
 		- the parent-block that contains this child-block
-	-
-	- ## :block/name #unfinished
-		- ## :block/
+	- ## :block/left #unfinished
 		- ?
+	- ## :block/collapsed?
+		- a boolean to indicate if the child-blocks should be expanded or not
+	- ## :block/format
+		- `markdown` or `org`
+	- ## :block/page
+		- which page this block belongs to
 	- ## :block/refs
-		- a block that is a reference to another block or page
+		- reference blocks
+	- ## :block/path-refs
+		- referenced pages inherited from the parents
+	- ## :block/tags #unfinished
+		- for pages?
+		-
+	- ## :block/name #unfinished
+		- ?
 	- ## :block/marker #unfinished
 		- used for [[Tasks]] (and other things?)
 	-
