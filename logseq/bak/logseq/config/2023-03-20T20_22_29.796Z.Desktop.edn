@@ -18,7 +18,7 @@
  ;; When creating the new journal page, the app will use your template if there is one.
  ;; You only need to input your template name here.
  :default-templates
- {:journals ""}
+ {:journals "Journal"}
 
  ;; Set a custom date format for journal page title
  ;; Example:
@@ -344,7 +344,7 @@
  :journal/page-title-format "yyyy-MM-dd"
  :editor/preferred-pasting-file? true
  :feature/enable-flashcards? false
- :graph/settings {:journal? false}
+ :graph/settings {:journal? true, :builtin-pages? true}
 
  ;; specify the format of the filename for journal files
  ;; :journal/file-name-format "yyyy_MM_dd"
