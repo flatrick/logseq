@@ -1,4 +1,7 @@
 - # :block
+	- #+BEGIN_CENTER
+	  [Latest version of Logseq's schema](https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/schema.cljs)
+	  #+END_CENTER
 	- ## :block/type
 		- a string type of the current block
 			- `whiteboard`
@@ -51,4 +54,12 @@
 		- page's original name
 	- ## :block/journal?
 		- whether page is a journal
-	- ## :block/jour
+	- ## :block/journal-day #unfinished
+		- ?
+	- ## :block/namespace #unfinished
+	- ## :block/macros #unfinished
+	- ## :block/file #unfinished
+	- ## :block/path #unfinished
+	- ## :block/content #unfinished
+	- ## :block/handle #unfinished
+-
