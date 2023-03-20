@@ -62,4 +62,7 @@
 	- ## :block/path #unfinished
 	- ## :block/content #unfinished
 	- ## :block/handle #unfinished
--
+- # :file
+	- # :file/path
+	- # :file/content
+	- # :file/handle
