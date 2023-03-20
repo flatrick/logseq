@@ -191,8 +191,7 @@ tags:: [[Logseq]], [[Database]], [[Query]], [[Clojure]]
 		- {{query (and [[Dynamic Variables]] "today" )}}
 - # #unfinished
 	- https://github.com/logseq/logseq/blob/master/deps/db/src/logseq/db/rules.cljc
-	- collapsed:: true
-	  ```clojure
+	- ```clojure
 	  {{query (block-content "query") }}
 	  
 	  :block-content
