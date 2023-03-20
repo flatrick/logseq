@@ -23,7 +23,6 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 			- It is a blank placeholder, *matching anything without binding or unifying*
 				- Using a variable instead of **_** will cause unnecessary work for the query engine
 - # Grammar / Terminology
-  collapsed:: true
 	- `''` = literal
 	- `""` = string
 	- `[]` = list or vector
@@ -38,7 +37,6 @@ tags:: [[Extensible Data Notation]], [[Logseq]], [[Datalog]], [[Datascript]], [[
 	- `?symbol` = symbols are what most other languages would call a **variable**.
 		- It holds (a reference to) data, either input from the user or output from a step
 - # The parts of a query
-  collapsed:: true
 	- ## :title
 		- ### [[Hiccup]]
 	- ## :query
