@@ -1,0 +1,9 @@
+- # :block
+	- ## :block/name
+	- ## :block/refs
+		- a block that is a reference to another block or page
+	- ## :block/parent
+		- the parent-block that contains this child-block
+	- ## :block/marker
+		- used for [[Tasks]] (and other things?)
+	-
