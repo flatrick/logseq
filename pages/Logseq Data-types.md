@@ -20,10 +20,23 @@
 	- ## :block/path-refs
 		- referenced pages inherited from the parents
 	- ## :block/tags #unfinished
-		- for pages?
-		-
-	- ## :block/name #unfinished
-		- ?
+		- for **pages**?
+	- ## :block/alias
+		- for **pages**
+	- ## :block/content
+		- full-text for current block
 	- ## :block/marker #unfinished
 		- used for [[Tasks]] (and other things?)
+	- ## :block/priority
+		- [[Priority]] tags for **blocks** (and pages?)
+	- ## :block/properties
+		- [[Properties]] stored in a block
+	- ## :block/properties-order #unfinished
+		- ? vector ?
+	- ## :block/properties-text-values
+		- original property value`s content
+	- ## :block/pre-block?
+		- b
+	- ## :block/name #unfinished
+		- ?
 	-
