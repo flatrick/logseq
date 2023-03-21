@@ -1,14 +1,17 @@
-- # W
-- [[Outliner]]
-  collapsed:: true
-	- **Branch**: a block with blocks underneath it
-		- **Leaf**: a block with no blocks underneath it.
-	- **Parent & Child** relations describe the hierarchy of blocks
-		- A **Parent** can have *multiple* **Children**
-		- A **Child** has *only one* **Parent**
-		- A block can be a **Parent** and a **Child** at the same time
-			- The **block** above this is a **parent** to this **block**
-			- It is also a **child** to the **block** one level above it
+- # Welcome!
+	- ^^Logseq^^ is a note-taking application with some great features
+	- ^^Logseq^^ is what is called an [[Outliner]]
+		- This means that everything is based on blocks
+			- An indented block
+		- **Branch**: a block with blocks underneath it
+			- **Leaf**: a block with no blocks underneath it.
+		- **Parent & Child** relations describe the hierarchy of blocks
+			- A **Parent** can have *multiple* **Children**
+			- A **Child** has *only one* **Parent**
+			- A block can be a **Parent** and a **Child** at the same time
+				- The **block** above this is a **parent** to this **block**
+				- It is also a **child** to the **block** one level above it
+	-
 - **Blocks** are the smallest *unit of information* that you can work with in **Logseq**
   collapsed:: true
 	- A **Page** corresponds to a single file on disk where we can store our **Blocks** inside of
