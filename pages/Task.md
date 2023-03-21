@@ -2,6 +2,7 @@ alias:: [[Tasks]]
 
 - **Tasks** is how [[Logseq]] helps you keep track of what to do
 - Creating a task can be done in multiple ways:
+  collapsed:: true
 	- These can written by hand (in uppercase) at the beginning of a block to turn it into a task (see example below)
 		- ```
 		  NOW I am working on this
@@ -27,6 +28,10 @@ alias:: [[Tasks]]
 			  :END:
 	- `IN-PROGRESS` and `WAIT` are not available through the [[Slash-commands]] nor through the toggle and has to be typed out by hand
 		- These are most likely deprecated and/or forgotten to be removed
+- You can also give **tasks** a *Deadline* or a *Scheduled* date/time
+	- `/Deadline`
+	- `/Scheduled`
+	- text
 - # Examples
 	- NOW I am working on this
 	  :LOGBOOK:

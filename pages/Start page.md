@@ -51,7 +51,6 @@
 		- **Links to _blocks_ are also _bi-directional_**
 - **Logseq** allows you to add [[Metadata]] about any page and/or block
 - **Logseq** also has functionality for [[Task]]-management
-	- Not only that, xit
 - [[Commands]]
 - [[Macros]]
 - [[Customize Logseq]]
