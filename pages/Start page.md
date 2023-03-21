@@ -50,6 +50,7 @@
 				- Which leads us to the next topic: [[Graph View]]
 		- **Links to _blocks_ are also _bi-directional_**
 - **Logseq** allows you to add [[Metadata]] about any page and/or block
+-
 - [[Commands]]
 - [[Macros]]
 - [[Customize Logseq]]
