@@ -2,28 +2,29 @@
 	- ^^Logseq^^ is a note-taking application with some great features
 	- ^^Logseq^^ is what is called an [[Outliner]]
 		- This means that everything is based on blocks
-			- An indented block
-		- **Branch**: a block with blocks underneath it
-			- **Leaf**: a block with no blocks underneath it.
-		- **Parent & Child** relations describe the hierarchy of blocks
-			- A **Parent** can have *multiple* **Children**
-			- A **Child** has *only one* **Parent**
-			- A block can be a **Parent** and a **Child** at the same time
-				- The **block** above this is a **parent** to this **block**
-				- It is also a **child** to the **block** one level above it
-	-
-- **Blocks** are the smallest *unit of information* that you can work with in **Logseq**
-  collapsed:: true
-	- A **Page** corresponds to a single file on disk where we can store our **Blocks** inside of
-		- **Logseqs** has multiple abilites to collect data from other different pages and blocks
-			- So *a single page could contain only references to data in other places* and show it as if the data exists in that page itself
-				- You can use [[Queries]] to show all data that matches your criteria
-				- You can use [[Block references]] to:
-					- make a link to a different **block**
-					- embed the content of that **block** and all its **children**
-					  id:: 64172cb8-6313-40a9-9d89-c1ffb78da2be
-					- make a link/shortcut to that block that can be used outside **Logseq** to quickly open **Logseq** and show the block
-				- You can even *embed entire pages* into your page -> ((64163108-4642-4bff-b3fd-c8fd45fde761))
+			- And by indenting a block, you indicate that it is related to the block above it
+		- **Blocks** are the smallest *unit of information* that you can work with in **Logseq**
+			- A **Page** corresponds to a single file on disk where we can store our **Blocks** inside of
+				- **Logseqs** has multiple abilites to collect data from other different pages and blocks
+					- So *a single page could contain only references to data in other places* and show it as if the data exists in that page itself
+						- You can use [[Queries]] to show all data that matches your criteria
+						- You can use [[Block references]] to:
+							- make a link to a different **block**
+							- embed the content of that **block** and all its **children**
+							  id:: 64172cb8-6313-40a9-9d89-c1ffb78da2be
+							- make a link/shortcut to that block that can be used outside **Logseq** to quickly open **Logseq** and show the block
+						- You can even *embed entire pages* into your page -> ((64163108-4642-4bff-b3fd-c8fd45fde761))
+		- To more easily describe the blocks relation to one another, there are some terms you should know
+			- **Branch**: a block with further indented blocks underneath it
+			  collapsed:: true
+				- **Leaf**: a block with no blocks underneath it (i.e. at the end of a branch)
+			- **Parent & Child** relations describe the hierarchy of blocks
+			  collapsed:: true
+				- A **Parent** can have *multiple* **Children**
+				- A **Child** has *only one* **Parent**
+				- A block can be a **Parent** and a **Child** at the same time
+					- The **block** above this is a **parent** to this **block**
+					- But it is also a **child** to the **block** one level above it
 - **Logseq** is built around the concept of [[Networked thinking]]
   collapsed:: true
 	- Because of this, the ability to link from one note to another is a very central concept of the application
