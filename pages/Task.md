@@ -1,6 +1,6 @@
 alias:: [[Tasks]]
 
-- **Tasks** is how [[Logseq]] helps you keep track of what to do
+- **Tasks** is how [[Logseq]] helps you keep track of what to do and the *state* of said **tasks**
 - Creating a task can be done in multiple ways:
   collapsed:: true
 	- These can written by hand (in uppercase) at the beginning of a block to turn it into a task (see example below)
