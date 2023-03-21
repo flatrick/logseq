@@ -29,9 +29,10 @@ alias:: [[Tasks]]
 	- `IN-PROGRESS` and `WAIT` are not available through the [[Slash-commands]] nor through the toggle and has to be typed out by hand
 		- These are most likely deprecated and/or forgotten to be removed
 - You can also give **tasks** a *Deadline* or a *Scheduled* date/time
+	- To set a deadline or schedule when to do a task, create the task as you usually
 	- `/Deadline`
 	- `/Scheduled`
-	- text
+	-
 - # Examples
 	- NOW I am working on this
 	  :LOGBOOK:
