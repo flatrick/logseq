@@ -30,11 +30,10 @@ alias:: [[Tasks]]
 		- These are most likely deprecated and/or forgotten to be removed
 - You can also give **tasks** a *Deadline* or a *Scheduled* date/time
 	- When you've made a **task**,  select that block
-		- then
-	-
-	- `/Deadline`
-	- `/Scheduled`
-	-
+		- then use one of the following two [[Commands]]
+			- `/Deadline`
+			- `/Scheduled`
+		- when entered, you will be presented with a date, time and a choice to make the task repeating/recurring
 - # Examples
 	- NOW I am working on this
 	  :LOGBOOK:
