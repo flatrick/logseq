@@ -1,7 +1,7 @@
 - # Welcome!
 	- ^^Logseq^^ is a note-taking application with some great features
 	- ^^Logseq^^ is what is called an [[Outliner]]
-		- This means that everything is based on blocks
+		- This means that everything is based on blocks containing information
 			- And by indenting a block, you indicate that it is related to the block above it
 		- **Blocks** are the smallest *unit of information* that you can work with in **Logseq**
 			- A **Page** corresponds to a single file on disk where we can store our **Blocks** inside of
@@ -14,12 +14,10 @@
 							  id:: 64172cb8-6313-40a9-9d89-c1ffb78da2be
 							- make a link/shortcut to that block that can be used outside **Logseq** to quickly open **Logseq** and show the block
 						- You can even *embed entire pages* into your page -> ((64163108-4642-4bff-b3fd-c8fd45fde761))
-		- To more easily describe the blocks relation to one another, there are some terms you should know
+		- To more easily describe the blocks' relations to one another, there are some terms you should know about
 			- **Branch**: a block with further indented blocks underneath it
-			  collapsed:: true
 				- **Leaf**: a block with no blocks underneath it (i.e. at the end of a branch)
 			- **Parent & Child** relations describe the hierarchy of blocks
-			  collapsed:: true
 				- A **Parent** can have *multiple* **Children**
 				- A **Child** has *only one* **Parent**
 				- A block can be a **Parent** and a **Child** at the same time
