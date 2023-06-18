@@ -25,10 +25,11 @@
 					- But it is also a **child** to the **block** one level above it
 - ^^Logseq^^ is built around the concept of [[Networked thinking]]
 	- Because of this, the ability to link from one note to another is a very central concept of the application
-	- You can either use `[[Links]]` which is the primary way to connect notes
-	- And you can also give blocks and/or pages  `#tags` to connect notes
-		- It is mostly a question of aesthetics as a **link** will look differently than a **tag**
-			- But it does affect how you reference these connections in [[Queries]]
+	- You can either use:
+		- `[[Links]]` which is the primary way to connect notes
+		- Or you can give blocks and/or pages  `#tags` to connect notes
+	- It is mostly a question of aesthetics as a **link** will look differently than a **tag**
+		- But it does affect how you reference these connections in [[Queries]]
 		- If a **tag** contains spaces, you can `#[[Write tags like this]]`
 			- #+BEGIN_CAUTION
 			  When using tags with the second syntax (`#[[Write tags like this]]`), there is a tiny bug you should know of:
